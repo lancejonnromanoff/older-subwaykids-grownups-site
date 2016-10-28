@@ -1,0 +1,909 @@
+﻿.kids-mealbag {
+    margin: 0 auto;
+
+    @include respond-to(phone) {
+        width: .5 * 626px;
+        margin-top: -35px;
+    }
+
+    @include respond-to(phone-landscape) {
+        width: .5 * 850px;
+        margin-top: -35px;
+    }
+
+    @include respond-to(android-tablet) {
+        width: (3/8) * 1337px;
+        margin-top: -10px;
+    }
+
+    @include respond-to(ipad) {
+        width: 653px;
+        margin-top: 0;
+    }
+
+    @include respond-to(android-tablet-landscape) {
+        width: (3/8) * 2211px;
+        margin-top: -10px;
+    }
+
+    @include respond-to(desktop-md) {
+	   width: 743px;
+       margin-top: -65px;
+    }
+
+    @include respond-to(ipad-landscape) {
+        width: 933px;
+        margin-top: -35px;
+    }
+
+    @include respond-to(iphone6) {
+        width: .5 * 730px;
+        margin-top: -35px;
+    }	
+
+    @include respond-to(iphone6-landscape) {
+		width: .5 * 975px;
+        margin-top: -35px;
+    }
+
+    @include respond-to(iphone6plus) {
+ 		width: (1/3) * 1360px / 1.15;
+        margin-top: -10px;
+    }
+
+    @include respond-to(iphone6plus-landscape) {
+        width: (1/3) * 2211px / 1.15;
+        margin-top: -10px;
+    }
+
+    .box {
+        position: relative;
+        background-repeat: no-repeat;
+        //background-size: contain;
+
+        @include respond-to(phone) {
+			background-size: cover;
+			background-color:#fff;
+            background-image: image-url('kids-mealbag/phone/bg.jpg');
+			height: .5 * 686px;
+        }
+
+        @include respond-to(phone-landscape) {
+            background-image: image-url('kids-mealbag/phone-landscape/bg.jpg');
+            //height: .5 * 496px;
+			height: .5 * 450px;
+        }
+
+        @include respond-to(android-tablet) {
+            background-image: image-url('kids-mealbag/5x8-3x/bg.jpg');
+            height: (3/8) * 1946px;
+        }
+
+        @include respond-to(ipad) {
+			background-size: cover;
+			background-color:#fff;
+
+			background-image: image-url('kids-mealbag/ipad/bg.jpg');
+			height: 725px;
+
+            @include respond-to(ipad-retina) {
+                background-image: image-url('kids-mealbag/ipad-retina/bg.jpg');
+            }
+        }
+
+        @include respond-to(android-tablet-landscape) {
+            background-image: image-url('kids-mealbag/8x5-3x/bg.jpg');
+            height: (3/8) * 1084px;
+        }
+
+        @include respond-to(desktop-md) {
+            background-image: image-url('kids-mealbag/desktop-md/bg.jpg');
+			//height: 394px;
+            height: 438px;
+
+        }
+
+        @include respond-to(ipad-landscape) {
+			background-size: cover;
+			background-color:#fff;
+			
+            background-image: image-url('kids-mealbag/ipad-retina-landscape/bg.jpg');
+			height: 500px;
+
+            @include respond-to(ipad-retina-landscape) {
+                background-image: image-url('kids-mealbag/ipad-retina-landscape/bg.jpg');
+            }
+        }
+
+        @include respond-to(iphone6) {
+			background-size: cover;
+			background-color:#fff;
+            background-image: image-url('kids-mealbag/iphone6/bg.jpg');
+			height: .5 * 800px;
+        }
+
+        @include respond-to(iphone6-landscape) {
+			background-size: cover;
+            background-image: image-url('kids-mealbag/iphone6-landscape/bg.jpg');
+			height: .5 * 514px;
+        }
+
+        @include respond-to(iphone6plus) {
+            background-image: image-url('kids-mealbag/9x16-3x/bg.jpg');
+			height: (1/3) * 1500px / 1.15;//height: (1/3) * 1538px / 1.15;
+        }
+
+        @include respond-to(iphone6plus-landscape) {		
+			background-size: cover;
+			background-color:#fff;
+            background-image: image-url('kids-mealbag/16x9-3x/bg.jpg');
+			height: (1/3) * 1175px / 1.15;
+        }
+
+        .meal-bag {
+            position: absolute;
+			
+
+            @include respond-to(phone) {
+                top: -8%;
+                left: 4.5%;
+                width: 130%;
+            }
+
+            @include respond-to(phone-landscape) {
+                top: -4.4%;
+                left: 4%;
+				width:100%;
+            }
+
+            @include respond-to(android-tablet) {
+                top: 5%;
+                left: 7%;
+            }
+
+            @include respond-to(ipad) {
+                top: 0.3%;
+                left: 4%;
+            }
+
+            @include respond-to(android-tablet-landscape) {
+                top: 7%;
+                left: 9%;
+            }
+
+            @include respond-to(desktop-md) {
+                top: 7%;
+                left: 5%;
+            }
+
+            @include respond-to(ipad-landscape) {
+                top: 9%;
+                left: 1%;
+            }
+
+            @include respond-to(iphone6-landscape) {
+                top: 0%;
+                left: 10%;
+            }
+
+            @include respond-to(iphone6plus-landscape) {
+                top: 7%;
+                left: 3%;
+            }
+
+            .heading {
+                font-family: "Neutraface";
+                //font-family: "HelveticaNeue";
+                color: #fee734;
+                line-height: .9em;
+				
+                //SPECIAL CASES
+                .yellow{color:#fee734;}
+
+				span {
+										
+					@include respond-to(phone) {
+						display:inline-block;
+					}
+					@include respond-to(phone-landscape) {
+						display:none;
+					}
+					@include respond-to(iphone6) {
+						display:inline-block;
+					}
+					@include respond-to(iphone6-landscape) {
+						display:none;
+					}
+					@include respond-to(iphone6plus) {
+						//display:inline-block;
+					}
+					@include respond-to(iphone6plus-landscape) {
+						display:none;
+					}
+					@include respond-to(desktop-md) {
+						display:none;
+					}
+					@include respond-to(ipad) {
+						display:inline-block;
+					}
+					@include respond-to(ipad-landscape) {
+						display:none;
+					}				
+					
+				}
+
+                @include respond-to(phone) {
+                    @include font-size(2.6);
+                    @include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+					margin-top:12%;
+                    width: 75%;
+					line-height: 1.1em;
+                    text-align: left;
+                }
+
+                @include respond-to(phone-landscape) {
+                   @include font-size(2.5);
+                   @include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 60%;
+                    text-align: center;
+					margin-top:5%;
+					.no-desktop{display:inline-block;}
+                }
+
+                @include respond-to(android-tablet) {
+                    @include font-size((3/8) * 13.19);
+                    @include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 53%;
+                    text-align: left;
+                }
+
+                @include respond-to(ipad) {
+					@include font-size(5.7);
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+					width:90%;
+					//top:12%;
+					//left:2%;
+                    text-align: left;
+                    letter-spacing: 0.02em;
+                }
+
+                @include respond-to(android-tablet-landscape) {
+                    @include font-size((3/8) * 13);
+                    @include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 51%;
+                    text-align: center;
+                }
+
+                @include respond-to(desktop-md) {
+                    @include font-size(3.8);
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+					line-height:1em;
+					font-style:normal;
+                    //width: 60%;
+                    width: 56%;
+					margin-top:1%;
+                    text-align: left;
+                }
+
+                @include respond-to(ipad-landscape) {
+					@include font-size(.6 * 9);
+                    @include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 70%;
+                    text-align: left;
+                }
+
+                @include respond-to(iphone6) {
+                    @include font-size(2.8);
+                    @include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    
+					/*width: 60%;
+                    text-align: left;
+					line-height: .9em;
+                    //margin-top:4%;
+					margin-left:6%;
+					*/
+                }
+
+                @include respond-to(iphone6-landscape) {
+                    @include font-size(2.8);
+                    @include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 75%;
+                    text-align: left;
+					line-height: 1em;	
+					
+					.no-desktop{display:inline-block;}					
+                }
+
+                @include respond-to(iphone6plus) {
+					@include font-size(3);
+                    @include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));					
+                    width: 65%;
+                    text-align: left;
+					margin-top:10%;
+                }
+
+                @include respond-to(iphone6plus-landscape) {
+                    @include font-size(3.5);
+                    @include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 60%;
+                    text-align: left;
+					margin-top:2%;
+					left:4%;
+                }
+				
+				.no-desktop{					
+					@include respond-to(desktop-md) {
+						display:none;
+					}					
+				
+					@include respond-to(iphone6plus-landscape) {
+						display:none;
+					}
+				}
+				
+				.no-mobile{
+					display:none;
+					@include respond-to(desktop-md) {
+						display:inline;
+					}
+					@include respond-to(iphone6plus-landscape) {
+						display:inline;
+					}
+					
+					@include respond-to(iphone6) {
+						display:inline;
+						//margin-left:6%;
+					}
+				}
+            }
+
+            .description {
+                font-family: "HelveticaNeue";
+                color: #ffffff;
+
+                @include respond-to(phone) {
+                    @include font-size(1.7);
+                    margin-top: 0%;
+                    margin-left: 0.5%;
+                    width: 100%;
+                    text-align: left;					
+					.no-mobile{display:block;}
+                }
+
+                @include respond-to(phone-landscape) {
+                    @include font-size(1.6);
+                    margin-top: 0%;
+                    margin-left: 1%;
+                    width: 100%;
+                    text-align: left;
+                    .no-mobile{display:block;}
+                }
+
+                @include respond-to(android-tablet) {
+                    @include font-size((3/8) * 6.95);
+                    margin-top: 1.5%;
+                    width: 60%;
+                    text-align: left;
+                    line-height: 1.1em;
+                }
+
+                @include respond-to(ipad) {
+                    @include font-size(.5 * 7);
+                    width: 80%;
+                    text-align: left;		
+					.no-mobile{display:block;}
+                }
+
+                @include respond-to(android-tablet-landscape) {
+                    @include font-size((3/8) * 4.79);
+                    margin-top: 1%;
+                    width: 51%;
+                    text-align: center;
+                    line-height: 1.1em;
+                }
+
+                @include respond-to(desktop-md) {
+                    @include font-size(2.8);
+                    width: 60%;
+                    text-align: left;
+					margin-top: 1%;					
+					.no-mobile{display:inline};
+                }
+
+                @include respond-to(ipad-landscape) {
+                    @include font-size(.5 * 6);
+                    width: 70%;
+                    text-align: center;					
+					.no-mobile{display:none;}
+                }
+
+                @include respond-to(iphone6) {
+                    @include font-size(.5 * 3.9);
+                    margin-top: 2%;
+                    width: 100%;
+                    text-align: left;
+					margin-left:7%
+                }
+
+                @include respond-to(iphone6-landscape) {
+                    @include font-size(.5 * 3.2);
+                    margin-top: 1%;
+                    width: 56%;
+                    text-align: center;
+                }
+
+                @include respond-to(iphone6plus) {
+                    @include font-size(2);
+                    margin-top: 1%;
+                    width: 100%;
+                    text-align: left;
+                }
+
+                @include respond-to(iphone6plus-landscape) {
+                    @include font-size((1/3) * 6.6 / 1.15);
+                    margin-top: 1%;
+                    width: 60%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .meal-bags-container {
+            position: absolute;
+
+            @include respond-to(phone) {
+                top: 28%;
+                right: 15%;
+            }
+
+            @include respond-to(phone-landscape) {
+                top: 6px;
+                right: 77px;
+            }
+
+            @include respond-to(android-tablet) {
+                top: 41%;
+                right: 13%;
+            }
+
+            @include respond-to(ipad) {
+                top: 28%;
+                right: 13%;
+            }
+
+            @include respond-to(android-tablet-landscape) {
+                top: 6px;
+                right: 155px;
+            }
+
+            @include respond-to(desktop-md) {
+                top: 12px;
+                right: 130px;
+            }
+
+            @include respond-to(ipad-landscape) {
+                top: 7px;
+                right: 143px;
+            }
+
+            @include respond-to(iphone6) {
+                top: 42%;
+                right: 13%;
+            }
+
+            @include respond-to(iphone6-landscape) {
+                top: 6px;
+                right: 107px;
+            }
+
+            @include respond-to(iphone6plus) {
+                top: 43%;
+                right: 15%;
+            }
+
+            @include respond-to(iphone6plus-landscape) {
+                top: 4px;
+                right: 125px;
+            }
+
+            .collect-all {
+                position: absolute;
+                font-family: "HelveticaNeue";
+                 color: #00556b;
+                text-align: center;
+
+                @include respond-to(phone) {
+                    left: 30.5%;
+                    top: 44%;
+                    width: 33%;
+                }
+
+                @include respond-to(phone-landscape) {
+                    top: 40%;
+                }
+
+                /*@include respond-to(iphone4) {
+                    @include font-size(.5 * 2.1);
+                }*/
+
+                @include respond-to(android-tablet) {
+                    @include font-size((3/8) * 4.76);
+                    top: 44%;
+                }
+
+                @include respond-to(ipad) {
+                    @include font-size(.5 * 4.5);
+                    top: 44%;
+                }
+
+                @include respond-to(android-tablet-landscape) {
+                    @include font-size((3/8) * 5.13);
+                    top: 39%;
+                }
+
+                @include respond-to(desktop-md) {
+                    @include font-size(2.2);
+                    width: 37%;
+                    top: 38%;
+                    left: 29%;
+                }
+
+                @include respond-to(ipad-landscape) {
+                    @include font-size(.5 * 5.6);
+                    top: 39%;
+                }
+
+                @include respond-to(iphone6) {
+                    @include font-size(.5 * 2.48);
+                }
+
+                @include respond-to(iphone6-landscape) {
+                    @include font-size(.5 * 2.68);
+                }
+
+                @include respond-to(iphone6plus) {
+                    @include font-size((1/3) * 4.76 / 1.15);
+                }
+
+                @include respond-to(iphone6plus-landscape) {
+                    @include font-size((1/3) * 5.1 / 1.15);
+                    top: 38%;
+                }
+            }
+
+            .meal-bags {
+                margin: 0 auto;
+
+                @include respond-to(phone) {
+                    width: .5 * 206px;
+                }
+
+                @include respond-to(phone-landscape) {
+                    width: .5 * 230px;
+                }
+
+                @include respond-to(android-tablet) {
+                    width: (3/8) * 464px;
+                }
+
+                @include respond-to(ipad) {
+                    width: .5 * 439px;
+                }
+
+                @include respond-to(android-tablet-landscape) {
+                    width: (3/8) * 509px;
+                }
+
+                @include respond-to(desktop-md) {
+                    width: 226px;
+                }
+
+                @include respond-to(ipad-landscape) {
+                    width: .5 * 562px;
+                }
+
+                @include respond-to(iphone6) {
+                    width: .5 * 242px;
+                }
+
+                @include respond-to(iphone6-landscape) {
+                    width: .5 * 265px;
+                }
+
+                @include respond-to(iphone6plus) {
+                    width: (1/3) * 464px / 1.15;
+                }
+
+                .btn-carousel-prev, .btn-carousel-next {
+                    @include respond-to(phone) {
+                        top: 72%;
+                    }
+
+                    @include respond-to(desktop-md) {
+                        top: 69%;
+                    }
+                }
+
+                .bag {
+                    background-repeat: no-repeat;
+                    background-size: contain;
+
+                    @include respond-to(phone) {
+                        width: .5 * 206px;
+                        height: .5 * 433px;
+                    }
+
+                    @include respond-to(phone-landscape) {
+                        width: .5 * 226px;
+                        height: .5 * 438px;
+                    }
+
+                    @include respond-to(android-tablet) {
+                        width: (3/8) * 464px;
+                        height: (3/8) * 974px;
+                    }
+
+                    @include respond-to(ipad) {
+                        width: .5 * 439px;
+                        height: .5 * 923px;
+                    }
+
+                    @include respond-to(android-tablet-landscape) {
+                        width: (3/8) * 509px;
+                        height: (3/8) * 1002px;
+                    }
+
+                    @include respond-to(desktop-md) {
+                        width: 226px;
+                        height: 428px;
+                    }
+
+                    @include respond-to(ipad-landscape) {
+                        width: .5 * 562px;
+                        height: .5 * 1077px;
+                    }
+
+                    @include respond-to(iphone6) {
+                        width: .5 * 242px;
+                        height: .5 * 508px;
+                    }
+
+                    @include respond-to(iphone6-landscape) {
+                        width: .5 * 265px;
+                        height: .5 * 522px;
+                    }
+
+                    @include respond-to(iphone6plus) {
+                        width: (1/3) * 464px / 1.15;
+                        height: (1/3) * 974px / 1.15;
+                    }
+
+                    @for $i from 1 through 6 {
+                        &.bag#{$i} {
+                            @include respond-to(phone) {
+                                background-image: image-url('kids-mealbag/phone/bag#{$i}.png');
+                            }
+
+                            @include respond-to(phone-landscape) {
+                                background-image: image-url('kids-mealbag/phone-landscape/bag#{$i}.png');
+                            }
+
+                            @include respond-to(android-tablet) {
+                                background-image: image-url('kids-mealbag/5x8-3x/bag#{$i}.png');
+                            }
+
+                            @include respond-to(ipad) {
+                                background-image: image-url('kids-mealbag/ipad/bag#{$i}.png');
+
+                                @include respond-to(ipad-retina) {
+                                    background-image: image-url('kids-mealbag/ipad-retina/bag#{$i}.png');
+                                }
+                            }
+
+                            @include respond-to(android-tablet-landscape) {
+                                background-image: image-url('kids-mealbag/8x5-3x/bag#{$i}.png');
+                            }
+
+                            @include respond-to(desktop-md) {
+                                background-image: image-url('kids-mealbag/desktop-md/bag#{$i}.png');
+                            }
+
+                            @include respond-to(ipad-landscape) {
+                                background-image: image-url('kids-mealbag/ipad-landscape/bag#{$i}.png');
+
+                                @include respond-to(ipad-retina-landscape) {
+                                    background-image: image-url('kids-mealbag/ipad-retina-landscape/bag#{$i}.png');
+                                }
+                            }
+
+                            @include respond-to(iphone6) {
+                                background-image: image-url('kids-mealbag/iphone6/bag#{$i}.png');
+                            }
+
+                            @include respond-to(iphone6-landscape) {
+                                background-image: image-url('kids-mealbag/iphone6-landscape/bag#{$i}.png');
+                            }
+
+                            @include respond-to(iphone6plus) {
+                                background-image: image-url('kids-mealbag/9x16-3x/bag#{$i}.png');
+                            }
+
+                            @include respond-to(iphone6plus-landscape) {
+                                background-image: image-url('kids-mealbag/16x9-3x/bag#{$i}.png');
+                            }
+                        }
+                    }
+                }
+            }
+        }
+		
+		.instruction-video{
+			display:block;
+			bottom: 6%;
+			left: 3%;
+			position: absolute;
+			width: 15%;
+			color:#1f3c6e;		
+			
+			a{
+				text-decoration:none !important;
+			}
+			
+            @include respond-to(phone) {
+				bottom: 3%;
+				left: 6%;
+				line-height: 1em;
+				width: 40%;
+            }
+
+            @include respond-to(phone-landscape) {
+
+            }
+
+            @include respond-to(android-tablet) {
+
+            }
+
+            @include respond-to(ipad) {
+				bottom: 7%;
+				left: 6%;
+				line-height: 1em;
+				width: 45%;
+            }
+
+            @include respond-to(android-tablet-landscape) {
+				bottom: 4%;
+				left: 4%;
+				line-height: 1em;
+				width: 15%;
+            }
+
+
+            @include respond-to(ipad-landscape) {
+				bottom: 4%;
+				left: 4%;
+				line-height: 1em;
+				width: 15%;
+            }
+
+            @include respond-to(iphone6) {
+				bottom: 6%;
+				left: 6%;
+				line-height: 1em;
+				width: 40%;
+            }
+
+            @include respond-to(iphone6-landscape) {
+				bottom: 6%;
+				left: 4%;
+				line-height: 1em;
+				width: 20%;
+            }
+
+            @include respond-to(iphone6plus) {
+
+            }
+
+            @include respond-to(iphone6plus-landscape) {
+
+            }
+			
+			@include respond-to(desktop-md) {
+			bottom: 6%;
+			left: 3%;
+
+			width: 15%;	
+			}
+			
+			@include respond-to(desktop-lg) {
+			bottom: 6%;
+			left: 3%;
+
+			width: 15%;	
+            }
+		}
+
+        .disclosure {
+            position: absolute;
+            color: #ffffff;
+
+            @include respond-to(phone) {
+                font-size: 5px;
+                bottom: 1%;
+				left:3%;
+            }
+
+            @include respond-to(phone-landscape) {
+                bottom: 5.5%;
+                right: 6%;
+				text-align:right;
+            }
+
+            @include respond-to(android-tablet) {
+                @include font-size((3/8) * 2.03);
+                bottom: 5.5%;
+                right: 5%;
+				text-align:right;
+            }
+
+            @include respond-to(ipad) {
+                @include font-size(.5 * 2);
+				bottom:1%;
+                right: 2%;
+                text-align: right;
+            }
+
+            @include respond-to(android-tablet-landscape) {
+                @include font-size((3/8) * 2.03);
+                bottom: 3.5%;
+                right: 4%;
+				text-align:right;
+            }
+
+            @include respond-to(desktop-md) {
+                @include font-size(.9);
+				left:-1%;
+				width:100%;
+				text-align:right;
+				bottom: 1%;
+            }
+
+            @include respond-to(ipad-landscape) {
+                @include font-size(.5 * 2);
+                bottom: 1%;
+                right: 0;
+				left: -1%;
+            }
+
+            @include respond-to(iphone6) {
+                @include font-size(.5 * 1.05);
+                bottom: 0%;
+				left:-2%;
+				width:100%;
+				text-align:right;
+            }
+
+            @include respond-to(iphone6-landscape) {
+                @include font-size(.5 * 1.05);
+                bottom: 0%;
+                right: 0%;
+				text-align:right;
+            }
+
+            @include respond-to(iphone6plus) {
+                @include font-size((1/3) * 2 / 1.15);
+                bottom: 1%;
+                right: 2%;
+				text-align:right;
+            }
+
+            @include respond-to(iphone6plus-landscape) {
+                @include font-size((1/3) * 2 / 1.15);
+				//top:0;
+                bottom: 1%;
+                right: 4%;
+				text-align:right;
+            }
+        }
+    }
+}

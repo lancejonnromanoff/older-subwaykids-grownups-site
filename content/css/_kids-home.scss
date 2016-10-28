@@ -1,0 +1,1368 @@
+﻿.kids_index #header #logo {
+    @include respond-to(phone) {
+        background-image: image-url('kids-home/phone/logo.png');
+        width: .5 * 364px;
+        height: .5 * 205px;
+    }
+
+    @include respond-to(phone-landscape) {
+        background-image: image-url('kids-home/phone-landscape/logo.png');
+        width: .5 * 323px;
+        height: .5 * 179px;
+    }
+
+    @include respond-to(android-tablet) {
+        background-image: image-url('kids-home/5x8-3x/logo.png');
+        width: (3/8) * 640px;
+        height: (3/8) * 359px;
+    }
+
+    @include respond-to(ipad) {
+        background-image: image-url('layout/ipad/logo.png');
+        width: 261px;
+        height: 125px;
+
+        @include respond-to(ipad-retina) {
+            background-image: image-url('kids-home/ipad-retina/logo.png');
+        }
+    }
+
+    @include respond-to(android-tablet-landscape) {
+        background-image: image-url('kids-home/8x5-3x/logo.png');
+        width: (3/8) * 545px;
+        height: (3/8) * 323px;
+    }
+
+    @include respond-to(desktop-md) {
+        background-image: image-url('layout/desktop-md/logo.png');
+        width: 297px;
+        height: 169px;
+    }
+
+    @include respond-to(ipad-landscape) {
+        background-image: image-url('kids-home/ipad-landscape/logo.png');
+        width: 261px;
+        height: 153px;
+
+        @include respond-to(ipad-retina) {
+            background-image: image-url('kids-home/ipad-retina-landscape/logo.png');
+        }
+    }
+
+    @include respond-to(iphone6) {
+        background-image: image-url('kids-home/iphone6/logo.png');
+        width: .5 * 364px;
+        height: .5 * 205px;
+    }
+
+    @include respond-to(iphone6-landscape) {
+        background-image: image-url('kids-home/iphone6-landscape/logo.png');
+        width: .5 * 354px;
+        height: .5 * 200px;
+    }
+
+    @include respond-to(iphone6plus) {
+        background-image: image-url('kids-home/9x16-3x/logo.png');
+        width: (1/3) * 640px / 1.15;
+        height: (1/3) * 359px / 1.15;
+    }
+
+    @include respond-to(iphone6plus-landscape) {
+        background-image: image-url('kids-home/16x9-3x/logo.png');
+        width: .5 * 354px;
+        height: .5 * 200px;
+    }
+}
+
+.kids-home {
+    position: relative;
+    margin: 0 auto;
+
+    @include respond-to(phone) {
+        width: .5 * 600px;
+        margin-top: -30px;
+    }
+
+    @include respond-to(phone-landscape) {
+        width: .5 * 924px;
+    }
+
+    @include respond-to(android-tablet) {
+        width: (3/8) * 1353px;
+        margin-top: 0;
+    }
+
+    @include respond-to(ipad) {
+        width: 643px;
+        margin-top: 0;
+    }
+
+    @include respond-to(android-tablet-landscape) {
+        width: (3/8) * 2274px;
+        margin-top: -10px;
+    }
+
+    @include respond-to(desktop-md) {
+        //width: 761px;
+		width:752px;
+        margin-top: -55px;
+    }
+
+    @include respond-to(ipad-landscape) {
+        width: .5 * 1921px;
+        margin-top: 0;
+    }
+
+    @include respond-to(iphone6) {
+        width: .5 * 707px;
+        margin-top: -20px;
+    }
+
+    @include respond-to(iphone6-landscape) {
+        width: .5 * 1082px;
+        margin-top: -25px;
+    }
+
+    @include respond-to(iphone6plus) {
+        width: (1/3) * 1353px / 1.15;
+        margin-top: 0;
+    }
+
+    @include respond-to(iphone6plus-landscape) {
+        width: (1/3) * 2043px / 1.15;
+        margin-top: 0;
+    }
+
+    .advertising {
+        position: absolute;
+        font-family: 'Brady';
+        color: #782016;
+        text-align: center;
+        line-height: 1em;
+
+        @include respond-to(phone) {
+            @include font-size(.5 * 1.8);
+            width: 16%;
+            top: -6%;
+            right: 0;
+        }
+
+        @include respond-to(phone-landscape) {
+            @include font-size(.5 * 2.1);
+            width: 13%;
+            top: -9%;
+            right: 0;
+        }
+
+        @include respond-to(android-tablet) {
+            @include font-size((3/8) * 4.07);
+            width: 16%;
+            top: -6%;
+            right: 0;
+        }
+
+        @include respond-to(ipad) {
+            @include font-size(.5 * 3.87);
+            width: 17%;
+            top: -6%;
+            right: 0;
+        }
+
+        @include respond-to(android-tablet-landscape) {
+            @include font-size((3/8) * 4.76);
+            width: 12%;
+            top: -14%;
+            right: -2%;
+        }
+
+        @include respond-to(desktop-md) {
+            @include font-size(1.65);
+            width: 12%;
+            top: -6%;
+            right: 0;
+        }
+
+        @include respond-to(ipad-landscape) {
+            @include font-size(.5 * 4.43);
+            width: 13%;
+            top: -15%;
+            right: -2%;
+        }
+
+        @include respond-to(iphone6) {
+            @include font-size(.5 * 2.13);
+            width: 17%;
+            top: -10%;
+            right: -2%;
+        }
+
+        @include respond-to(iphone6-landscape) {
+            @include font-size(.5 * 2.49);
+            width: 12%;
+            top: -9%;
+            right: 0;
+        }
+
+        @include respond-to(iphone6plus) {
+            @include font-size((1/3) * 4.07 / 1.15);
+            width: 17%;
+            top: -10%;
+            right: -2%;
+        }
+
+        @include respond-to(iphone6plus-landscape) {
+            @include font-size((1/3) * 4.76 / 1.15);
+            width: 13%;
+            top: -11%;
+            right: 0;
+        }
+    }
+	
+
+
+    .lrg-promo-container {
+
+        a {
+            text-decoration: none;
+        }
+
+        @mixin portrait {
+            float: none;
+			margin-bottom: 5px;
+        }
+
+        @mixin landscape {
+            float: left;
+			margin-right: 5px;
+        }
+
+        @include respond-to(phone) {
+            @include portrait;
+        }
+
+        @include respond-to(phone-landscape) {
+            @include landscape;
+        }
+
+        @include respond-to(android-tablet) {
+            @include portrait;
+        }
+
+        @include respond-to(ipad) {
+            @include portrait;
+        }
+
+        @include respond-to(android-tablet-landscape) {
+            @include landscape;
+        }
+
+        @include respond-to(desktop-md) {
+            @include portrait;
+        }
+
+        @include respond-to(ipad-landscape) {
+            @include landscape;
+        }
+
+        @include respond-to(iphone6) {
+            @include portrait;
+        }
+
+        @include respond-to(iphone6-landscape) {
+            @include landscape;
+        }
+
+        @include respond-to(iphone6plus) {
+            @include portrait;
+        }
+
+        @include respond-to(iphone6plus-landscape) {
+            @include landscape;
+        }
+
+        .lrg-promo-unit {
+            @mixin portrait {
+                float: none;
+            }
+
+            @mixin landscape {
+                float: right;
+            }
+			
+			//Special case styles
+			.yellow{color:#fee734;}
+
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+            //background-size: contain;
+
+            @include respond-to(phone) {
+				background-size: cover;
+                @include portrait;
+                background-image: image-url('kids-home/phone/promo_unit.jpg');
+                width: auto;
+                height: 215px;
+            }
+
+            @include respond-to(phone-landscape) {
+                @include landscape;
+                background-image: image-url('kids-home/phone-landscape/promo_unit.jpg');
+                height: 197px;
+				width: 275px;
+            }
+
+            @include respond-to(android-tablet) {
+                @include portrait;
+                background-image: image-url('kids-home/5x8-3x/promo_unit.jpg');
+                width: auto;
+                height: (3/8) * 879px;
+            }
+
+            @include respond-to(ipad) {
+                @include portrait;
+                background-image: image-url('kids-home/ipad/promo_unit.jpg');
+                width: auto;
+                height: 411px;
+
+                @include respond-to(ipad-retina) {
+                    background-image: image-url('kids-home/ipad-retina/promo_unit.jpg');
+                }
+            }
+
+            @include respond-to(android-tablet-landscape) {
+                @include landscape;
+                background-image: image-url('kids-home/8x5-3x/promo_unit.jpg');
+                width: (3/8) * 1367px;
+                height: (3/8) * 944px;
+            }
+
+            @include respond-to(desktop-md) {
+                @include portrait;
+                background-image: image-url('kids-home/desktop-md/promo_unit.jpg'); 
+                width: auto;
+                height: 362px;
+            }
+
+            @include respond-to(ipad-landscape) {
+                @include landscape;
+                background-image: image-url('kids-home/ipad-landscape/promo_unit.jpg');
+                width: 583px;
+                height: 390px;
+
+                @include respond-to(ipad-retina-landscape) {
+                    background-image: image-url('kids-home/ipad-retina-landscape/promo_unit.jpg');
+                }
+            }
+
+            @include respond-to(iphone6) {
+                background-size: contain;
+                @include portrait;
+                background-image: image-url('kids-home/iphone6/promo_unit.jpg');
+                width: auto;
+                height: 224px;
+            }
+
+            @include respond-to(iphone6-landscape) {
+                background-size: contain;
+                @include portrait;
+                background-image: image-url('kids-home/iphone6-landscape/promo_unit.jpg');
+                width: 323px;
+                height: 218px;
+            }
+
+            @include respond-to(iphone6plus) {
+                @include portrait;
+                background-image: image-url('kids-home/9x16-3x/promo_unit.jpg');
+                width: auto;
+                height: 266px;
+            }
+
+            @include respond-to(iphone6plus-landscape) {
+                @include landscape;
+                background-image: image-url('kids-home/16x9-3x/promo_unit.jpg');
+                width: 355px;
+                height: 242px;
+            }
+
+            %default-style {
+                margin-left: auto;
+                margin-right: auto;
+                font-family: "HelveticaNeue";
+                text-align: center;
+            }
+
+            .heading {
+                @extend %default-style;
+                position: absolute;
+				font-family:"Neutraface";
+                color: #fff;
+                line-height: .95em;
+
+                @include respond-to(phone) {
+					@include font-size(1.2);
+                    width: 60%;
+                    top: 35%;
+                    left: 50%;
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+					line-height: 1.2em;
+					text-align:left;
+                }
+
+                @include respond-to(phone-landscape) {
+				   @include font-size(1.18);
+                    width: 60%;
+                    top: 33%;
+                    left: 52%;
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                }
+
+                @include respond-to(android-tablet) {
+					@include font-size(2.9);
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 50%;
+                    top: 13%;
+                    left: 48%;
+					text-align:left;
+                }
+
+                @include respond-to(ipad) {
+					@include font-size(2.6);
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 50%;
+                    top: 35%;
+                    left: 50%;
+					text-align:left;
+                }
+
+                @include respond-to(android-tablet-landscape) {
+					@include font-size(3);
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 50%;
+                    top: 25%;
+                    left: 48%;
+					text-align:left;
+                }
+
+                @include respond-to(desktop-md) {
+                    @include font-size(2.7);
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 60%;
+                    top: 29%;
+                    left: 42.6%;
+					text-align: left;
+                    letter-spacing: 0.18em;
+					line-height:1.5em;
+                }
+
+                @include respond-to(ipad-landscape) {
+					@include font-size(1.9);
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 50%;
+                    top: 30%;
+                    left: 52%;
+					text-align:left;
+                }
+
+                @include respond-to(iphone6) {
+					@include font-size(1.5);
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 50%;
+                    top: 20%;
+                    left: 51%;
+					text-align:left;
+                }
+
+                @include respond-to(iphone6-landscape) {
+					@include font-size(1.4);
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 60%;
+                    top: 25%;
+                    left: 49%;
+                }
+
+                @include respond-to(iphone6plus) {
+					@include font-size(1.6);
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 50%;
+                    top: 25%;
+                    left: 50%;
+					text-align:left;
+                }
+
+                @include respond-to(iphone6plus-landscape) {
+					@include font-size(1.5);
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                    width: 60%;
+                    top: 25%;
+                    left: 50%;
+					text-align:left;
+                }
+
+                span{
+
+                    @include respond-to(phone) {
+                        @include font-size(1.8);
+                        width: 80%;
+                        letter-spacing: 0.0125em;
+                    }
+
+                    @include respond-to(phone-landscape) {
+                        @include font-size(1.7);
+                        width: 80%;
+                        letter-spacing: 0.0125em;
+                    }
+
+                    @include respond-to(ipad) {
+                        @include font-size(4);
+                        width: 80%;
+                        letter-spacing: 0.012em;
+                    }
+
+                    @include respond-to(desktop-md) {
+                        @include font-size(5.4);
+                        width: 80%;
+                        letter-spacing: 0em;
+                    }
+
+                    @include respond-to(ipad-landscape) {
+                        @include font-size(3.7);
+                        width: 80%;
+                        letter-spacing: 0.0125em;
+                    }
+
+                    @include respond-to(iphone6) {
+                        @include font-size(2.2);
+                        width: 80%;
+                        letter-spacing: 0.0125em;
+                    }
+
+                     @include respond-to(iphone6-landscape) {
+                        @include font-size(2);
+                        width: 80%;
+                        letter-spacing: 0.0125em;
+                    }
+					 
+					@include respond-to(iphone6plus) {
+                        @include font-size(2.4);
+                        width: 80%;
+                        letter-spacing: 0.0125em;
+                    }
+					
+					@include respond-to(iphone6plus-landscape) {
+                        @include font-size(2.2);
+                        width: 80%;
+                        letter-spacing: 0.0125em;
+                    }
+
+                }
+				
+            }
+
+            .description {
+                position: absolute;
+                @extend %default-style;
+                color: #fff;
+				font-family: "HelveticaNeue";
+				
+				@include respond-to(phone) {
+                    @include font-size(0.9);	
+                    display: block;
+					text-align: left;
+                    width: 45%;
+                    top: 51%;
+                    left: 50%;
+                    letter-spacing: 0.03em;
+                }
+				
+				@include respond-to(phone-landscape) {
+                    @include font-size(0.9);	
+                    display: block;
+					text-align: left;
+                    width: 45%;
+                    top: 51%;
+                    left: 52%;
+                    letter-spacing: 0.03em;
+                }
+		
+				@include respond-to(android-tablet) {
+                    @include font-size(1.85);	
+                    display: block;
+					text-align: left;
+                    width: 28%;
+                    top: 39%;
+                    left: 48%;
+                }
+
+                @include respond-to(ipad) {
+                    @include font-size(1.85);	
+                    display: block;
+					text-align: left;
+                    width: 45%;
+                    top: 53.5%;
+                    left: 50.5%;
+                    letter-spacing: 0.04em;
+                }
+				
+				@include respond-to(ipad-landscape) {
+                    @include font-size(1.85);	
+					text-align: left;
+                    width: 48%;
+                    top: 50%;
+                    left: 52%;
+                }
+								
+				@include respond-to(desktop-md) {
+                    @include font-size(2.5);	
+                    display: block;
+					text-align: left;
+                    width: 60%;
+                    top: 57%;
+                    left: 43%;
+                }
+				
+				@include respond-to(ipad-landscape) {
+                    @include font-size(1.85);	
+					text-align: left;
+                    width: 48%;
+                    top: 50%;
+                    left: 52%;
+                }
+				
+				@include respond-to(iphone6) {
+                    @include font-size(0.9);	
+					text-align: left;
+                    width: 80%;
+                    top: 46%;
+                    left: 52%;
+                }
+				
+				@include respond-to(iphone6-landscape) {
+                    @include font-size(0.9);	
+					text-align: left;
+                    width: 80%;
+                    left: 49%;
+                }
+				
+				@include respond-to(iphone6plus) {
+                    @include font-size(1.1);	
+                    display: block;
+					text-align: left;
+                    width: 51%;
+                    top: 46%;
+                    left: 51%;
+                }
+				
+				@include respond-to(iphone6plus-landscape) {
+                    @include font-size(1.1);	
+                    display: block;
+					text-align: left;
+                    width: 60%;
+                    top: 46%;
+                    left: 50%;
+                }
+            }
+        }
+    }
+
+    .promos {
+
+        a {
+            text-decoration: none;
+        }
+
+        @mixin portrait {
+            float: none;
+        }
+
+        @mixin landscape {
+            float: left;
+        }
+
+        @include respond-to(phone) {
+            @include portrait;
+            width: auto;
+            margin: .8% 0 0 0;
+        }
+
+        @include respond-to(phone-landscape) {
+            @include landscape;
+            width: 38%;
+            margin: 0;
+        }
+
+        @include respond-to(android-tablet) {
+            @include portrait;
+            width: auto;
+            margin: 1% 0 0 0;
+        }
+
+        @include respond-to(ipad) {
+            @include portrait;
+            width: auto;
+            margin: 1% 0 0 0;
+        }
+
+        @include respond-to(android-tablet-landscape) {
+            @include landscape;
+            width: 38%;
+            margin: 0;
+        }
+
+        @include respond-to(desktop-md) {
+            @include portrait;
+            width: auto;
+            margin:0;
+        }
+
+        @include respond-to(ipad-landscape) {
+            @include landscape;
+            width: 38%;
+            margin: 0;
+        }
+
+        @include respond-to(iphone6) {
+            @include portrait;
+            width: auto;
+            margin: .5% 0 0 0;
+        }
+
+        @include respond-to(iphone6-landscape) {
+            @include landscape;
+            width: 38%;
+            margin: 0;
+        }
+
+        @include respond-to(iphone6plus) {
+            @include portrait;
+            width: auto;
+            margin: 1.5% 0 0 0;
+        }
+
+        @include respond-to(iphone6plus-landscape) {
+            @include landscape;
+            width: 38%;
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                position: relative;
+                float: left;
+
+                @mixin portrait {
+                    width: 50%;
+                }
+
+                @mixin landscape {
+                    width: auto;
+                }
+
+                @mixin default-heading {
+                    font-family: "Neutraface";
+                    color: #fff200;
+                    line-height: 1em;
+					font-weight:normal;
+					font-style:italic;
+                }
+
+                @include respond-to(phone) {
+                    @include portrait;
+                }
+
+                @include respond-to(phone-landscape) {
+                    @include landscape;
+                }
+
+                @include respond-to(android-tablet) {
+                    @include portrait;
+                }
+
+                @include respond-to(ipad) {
+                    @include portrait;
+                }
+
+                @include respond-to(android-tablet-landscape) {
+                    @include landscape;
+                }
+
+                @include respond-to(desktop-md) {
+                    @include portrait;
+                }
+
+                @include respond-to(ipad-landscape) {
+                    @include landscape;
+                }
+
+                @include respond-to(iphone6) {
+                    @include portrait;
+                }
+
+                @include respond-to(iphone6-landscape) {
+                    @include landscape;
+                }
+
+                @include respond-to(iphone6plus) {
+                    @include portrait;
+                }
+
+                @include respond-to(iphone6plus-landscape) {
+                    @include landscape;
+                }
+                // 3 items -> pick 3rd item which is also the last item
+				//were originally commented out for the first two promotions
+                &:nth-child(3):last-child {
+                    width: 100%;
+
+                    a {
+                        background-image: image-url('kids-home/desktop-md/secondary_unit_01.jpg');
+                        margin-left: auto;
+                        margin-right: auto;
+                        float: none;
+
+                        @include respond-to(phone-landscape) {
+                            background-image: image-url('phone-landscape/btn_promo_left.jpg');
+                        }
+
+                        @include respond-to(desktop-md) {
+                            background-image: image-url('kids-home/desktop-md/secondary_unit_01.jpg');
+                        }
+
+                        @include respond-to(desktop-lg) {
+                            background-image: image-url('kids-home/desktop-md/secondary_unit_01.jpg');
+                        }
+
+                        @include respond-to(ipad) {
+                            background-image: image-url('kids-home/desktop-md/secondary_unit_01.png');
+                        }
+
+                        @include respond-to(ipad-landscape) {
+                            background-image: image-url('ipad-landscape/btn_promo_left.png');
+                        }
+                    }
+                }
+				
+				sup.asterisk {
+					font-family: arial, sans-serif;
+					}
+				
+				
+                .secondary-unit-left {
+                    position: relative;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+
+                    @mixin landscape {
+                        float: left;
+                    }
+
+                    @include respond-to(phone) {
+						background-size: cover;
+                        @include portrait;
+                        background-image: image-url('kids-home/phone/secondary_unit_01.jpg');
+					
+						width: .5 * 280px;						
+                        height: .5 * 125px;
+                    }
+
+                    @include respond-to(phone-landscape) {
+                        @include landscape;
+                        background-image: image-url('kids-home/phone-landscape/secondary_unit_01.jpg');
+					   
+					   float:right;
+					   width: 170px;					
+                       height: 91px;
+					   margin-right: -3%;
+                    }
+
+                    @include respond-to(android-tablet) {
+                        @include landscape;
+                        background-image: image-url('kids-home/5x8-3x/secondary_unit_01.jpg');
+                        width: (3/8) * 681px;
+                        height: (3/8) * 362px;
+                        margin-right: 0;
+                    }
+
+                    @include respond-to(ipad) {
+                        @include portrait;
+                        background-image: image-url('kids-home/ipad-retina/secondary_unit_01.jpg');
+
+						width: 310px;
+						height: 150px;
+
+                        @include respond-to(ipad-retina) {
+                            background-image: image-url('kids-home/ipad-retina/secondary_unit_01.jpg');
+                        }
+                    }
+
+                    @include respond-to(android-tablet-landscape) {
+                        @include landscape;
+                        background-image: image-url('kids-home/8x5-3x/secondary_unit_01.jpg');
+                        width: (3/8) * 861px;
+                        height: (3/8) * 459px;
+                        margin-right: 0;
+                    }
+
+                    @include respond-to(desktop-md) {
+                        @include portrait;
+                        background-image: image-url('kids-home/desktop-md/secondary_unit_01.jpg');
+                        width: 365px;
+                        height: 120px;						
+						margin:1% 0 0 -1%;						
+                    }
+					
+					
+
+                    @include respond-to(ipad-landscape) {
+                        @include landscape;
+                        background-image: image-url('kids-home/ipad-landscape/secondary_unit_01.jpg');
+                        width: 365px;
+                        height: 185px;
+						float:right;
+						margin: 0 -2% 0 0;
+  						
+                        @include respond-to(ipad-retina-landscape) {
+                            background-image: image-url('kids-home/ipad-retina-landscape/secondary_unit_01.jpg');
+                        }
+                    }
+
+                    @include respond-to(iphone6) {
+                        @include portrait;
+                        background-image: image-url('kids-home/iphone6/secondary_unit_01.jpg');
+
+						width: .5 * 340px;
+						height: .5 * 180px;
+                        margin: 1% 0 0 0%;
+                    }
+
+                    @include respond-to(iphone6-landscape) {
+                        @include landscape;
+                        background-image: image-url('kids-home/iphone6-landscape/secondary_unit_01.jpg');
+						float:right;
+                        background-size: cover;
+						width: .5 * 418px;
+                        height: 100px;
+                        margin-right: -3.5%;
+                    }
+
+                    @include respond-to(iphone6plus) {
+                        @include portrait;
+                        background-image: image-url('kids-home/9x16-3x/secondary_unit_01.jpg');
+
+						width: (1/3) * 646px / 1.16;
+                        height: (1/3) * 345px / 1.15;
+                        margin-right: 0;
+                    }
+
+                    @include respond-to(iphone6plus-landscape) {
+                        @include landscape;
+                        background-image: image-url('kids-home/16x9-3x/secondary_unit_01.jpg');
+                        width: (1/3) * 775px / 1.15;
+						height: (1/3) * 390px / 1.15;
+						margin: 0 0 0 3%;
+                    }
+
+                    .heading {
+                        position: absolute;
+                        @include default-heading;
+                        font-family: "HelveticaNeue";
+						color: #fff;
+						font-style:normal;
+
+                        @include respond-to(phone) {
+                            @include font-size(0.8);
+                            top: 45%;
+                            left: 41%;
+							width: 54%;
+                        }
+
+                        @include respond-to(phone-landscape) {
+                            @include font-size(1);
+                            top: 47%;
+                            left: 42%;
+							width: 60%;
+                        }
+
+                        @include respond-to(android-tablet) {
+                            @include font-size((3/8) * 4.5);
+                            top: 35%;
+                            left: 43%;
+                        }
+
+                        @include respond-to(ipad) {
+                            @include font-size(2);
+                            top: 50%;
+                            left: 42%;
+							width:55%;
+							@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                        }
+
+                        @include respond-to(android-tablet-landscape) {
+                            @include font-size((3/8) * 6.06);
+                            top: 34%;
+                            left: 50%;
+                        }
+
+                        @include respond-to(desktop-md) {
+                            @include font-size(2.2);
+							@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                            top: 38%;
+                            left: 44%;
+                            margin-right: 3%;
+							width:53%;
+                        }
+
+                        @include respond-to(ipad-landscape) {
+                            @include font-size(.5 * 4.06);
+                            top: 45%;
+                            left: 45%;
+							width:60%;
+                        }
+
+                        @include respond-to(iphone6) {
+                            @include font-size(1.1);
+                            top: 42%;
+                            left: 40%;
+							width:62%;
+							@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                        }
+
+                        @include respond-to(iphone6-landscape) {
+                            @include font-size(1.2);
+                            top: 35%;
+                            left: 45%;
+                            margin-right: 2%;
+							@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                        }
+
+                        @include respond-to(iphone6plus) {
+                            @include font-size(1.2);
+                            top: 40%;
+                            left: 40%;
+							width:60%;
+							@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                        }
+
+                        @include respond-to(iphone6plus-landscape) {
+                            @include font-size(1.2);
+                            top: 40%;
+                            left: 45%;
+                            margin-right: 2%;
+							@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                        }
+						
+						span{font-style:normal;}
+                    }
+                }
+
+                .disclosure {
+                    color: #000000;
+                    line-height: 1em;
+                    text-align: center;
+
+                    @include respond-to(phone) {
+                        font-size: 6px;
+                        float: left;
+                        margin-top: 2%;
+                        margin-left: 1%;
+                    }
+
+                    @include respond-to(phone-landscape) {
+                        font-size: 6px;
+                        float: left;
+                        //margin-top: -4%;
+						margin-top: 1%;
+                        margin-left: 3%;
+                    }
+
+                    @include respond-to(android-tablet) {
+                        @include font-size((3/8) * 2);
+                        float: left;
+                        margin-top: -1%;
+                        margin-left: 2%;
+                    }
+
+                    @include respond-to(ipad) {
+                        @include font-size(.5 * 1.8);
+                        float: left;
+                        margin-top: 1%;
+                        margin-left: 0;
+                    }
+
+                    @include respond-to(android-tablet-landscape) {
+                        @include font-size((3/8) * 2.02);
+                        float: left;
+                        margin-top: -4%;
+                        margin-left: 3%;
+                    }
+
+                    @include respond-to(desktop-md) {
+                        @include font-size(0.9);
+                        float: left;
+                        margin-top: 1%;
+                        margin-left: 2%;
+                    }
+
+                    @include respond-to(ipad-landscape) {
+                        @include font-size(0.8);
+                        float: left;
+                        margin-top: 1%;
+                        margin-left: 3%;
+                    }
+
+                    @include respond-to(iphone6) {
+                        @include font-size(.5 * .9);
+                        float: left;
+                        margin-top: -3%;
+                        margin-left: 3%;
+                    }
+
+                    @include respond-to(iphone6-landscape) {
+                        @include font-size(0.6);
+                        float: left;
+                        margin-top: 2%;
+                        margin-left: 3%;
+                    }
+
+                    @include respond-to(iphone6plus) {
+                        @include font-size(0.6);
+                        float: left;
+                        margin-top: 1%;
+                        margin-left: 2%;
+                    }
+
+                    @include respond-to(iphone6plus-landscape) {
+                        @include font-size(0.6);
+                        float: left;
+                        margin-top: 1%;
+                        margin-left: 3%;
+                    }
+                }
+				
+                .secondary-unit-right {
+                    position: relative;
+                    display: block;
+                    font-family: "HelveticaNeue";
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+
+                    @include respond-to(phone) {
+						background-size: cover;
+                        background-image: image-url('kids-home/phone/secondary_unit_02.jpg');
+						width: .5 * 280px;
+                        height: .5 * 125px;
+                    }
+
+                    @include respond-to(phone-landscape) {
+                       background-image: image-url('kids-home/phone-landscape/secondary_unit_02.jpg');
+					   width: 170px;					
+                       height: 91px;
+					   margin: 2% -3% 0 0;
+					   float:right;
+                    }
+
+                    @include respond-to(android-tablet) {
+                        background-image: image-url('kids-home/5x8-3x/secondary_unit_02.jpg');
+                        width: (3/8) * 679px;
+                        height: (3/8) * 362px;
+                        margin: 0;
+                    }
+
+                    @include respond-to(ipad) {
+                        background-image: image-url('kids-home/ipad/secondary_unit_02.jpg');
+						width: 310px;
+						height: 150px;
+
+                        @include respond-to(ipad-retina) {
+                            background-image: image-url('kids-home/ipad-retina/secondary_unit_02.jpg');
+                        }
+                    }
+
+                    @include respond-to(android-tablet-landscape) {
+                        background-image: image-url('kids-home/8x5-3x/secondary_unit_02.jpg');
+                        width: (3/8) * 861px;
+                        height: (3/8) * 459px;
+                        margin: 3% 0 0 0;
+                    }
+
+                    @include respond-to(desktop-md) {
+                        @include portrait;
+                        background-image: image-url('kids-home/desktop-md/secondary_unit_02.jpg');
+                        width: 365px;
+                        height: 120px;
+
+						margin: 1% 0 0 0;
+                    }
+
+                    @include respond-to(ipad-landscape) {
+                        background-image: image-url('kids-home/ipad-landscape/secondary_unit_02.jpg');
+                        width: 365px;
+                        height: 185px;
+						margin: 2% -2% -2%;
+
+                        @include respond-to(ipad-retina-landscape) {
+                            background-image: image-url('kids-home/ipad-retina-landscape/secondary_unit_02.jpg');
+                        }
+                    }
+
+                    @include respond-to(iphone6) {
+                        background-image: image-url('kids-home/iphone6/secondary_unit_02.jpg');
+						width: .5 * 340px;
+                        height: .5 * 180px;
+                        margin: 1% 0 0 2%;
+                    }
+
+                    @include respond-to(iphone6-landscape) {
+                        background-image: image-url('kids-home/iphone6-landscape/secondary_unit_02.jpg');
+						width: .5 * 418px;
+                        height: .5 * 200px;
+    				    margin: 2% 0 0 3%;
+                        background-size:cover;
+                    }
+
+                    @include respond-to(iphone6plus) {
+                        background-image: image-url('kids-home/9x16-3x/secondary_unit_02.jpg');
+						
+						width: (1/3) * 646px / 1.16;
+                        height: (1/3) * 345px / 1.15;
+                        margin-right: 0;
+                    }
+
+                    @include respond-to(iphone6plus-landscape) {
+                        background-image: image-url('kids-home/16x9-3x/secondary_unit_02.jpg');
+                        width: (1/3) * 775px / 1.15;
+                        height: (1/3) * 390px / 1.15;
+						margin: 2.5% 0 0 3%;
+                    }
+
+                    .heading {
+                        position: absolute;
+                        @include default-heading;
+                        font-family: "HelveticaNeue";
+						color:#fff;
+						font-style:normal;
+
+                        @include respond-to(phone) {
+                            @include font-size(0.8);
+                            width: 60%;
+                            margin-right: 15%;
+                            top: 45%;
+                            left: 35%;
+                        }
+
+                        @include respond-to(phone-landscape) {
+                            @include font-size(1);
+                            width: 60%;
+                            margin-right: 20%;
+                            top: 48%;
+                            left: 38%;
+                        }
+
+                        @include respond-to(android-tablet) {
+                            @include font-size((3/8) * 4.5);
+                            top: 17%;
+                            left: 4%;
+                        }
+
+                        @include respond-to(ipad) {
+                            @include font-size(2);
+                            width: 80%;
+                            margin-right: 4%;
+                            top: 50%;
+                            left: 34%;
+							@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+							
+							@include respond-to(ipad-retina) {
+								width:50%;
+							}
+                        }
+
+                        @include respond-to(android-tablet-landscape) {
+                            @include font-size((3/8) * 6.06);
+                            margin-right: 15%;
+                            top: 17%;
+                            left: 50%;
+                        }
+
+                        @include respond-to(desktop-md) {
+                            @include font-size(2.2);
+							@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                            margin-right: 0;
+                            top: 38%;
+                            left: 38%;
+                        }
+
+                        @include respond-to(ipad-landscape) {
+                            @include font-size(.5 * 4.06);
+                            margin-right: 15%;
+                            top: 45%;
+                            left: 35%;
+							width:70%;
+                        }
+
+                        @include respond-to(iphone6) {
+                            @include font-size(1.1);
+                            top: 44%;
+                            left: 34%;
+                            width:62%;
+							@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                        }
+
+                        @include respond-to(iphone6-landscape) {
+                            @include font-size(1.2);
+                            top: 38%;
+                            left: 40%;
+							@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                        }
+
+                        @include respond-to(iphone6plus) {
+                            @include font-size(1.2);
+                            top: 45%;
+                            left: 35%;
+							@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                        }
+
+                        @include respond-to(iphone6plus-landscape) {
+                            @include font-size(1.2);
+                            top: 45%;
+                            left: 40%;
+							@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+                        }
+                    }
+                }
+				
+				.single-unit-center{
+					float:none;
+					margin:0 auto;
+					@include respond-to(ipad) {text-align:left;}
+				}
+				
+				.single-unit-disclosure{
+					float: none;
+					margin-bottom: 1%;
+					margin-left: -2%;
+					margin-top: 1%;
+					
+					//@include respond-to(iphone) {margin-top:1%;}
+					@include respond-to(iphone6) {margin-top:1%;}
+					@include respond-to(iphone6plus) {margin-top:1%;}					
+					@include respond-to(ipad) {margin-top:1%;}
+					@include respond-to(desktop-md) {margin-top: 1%;}
+				}
+            }
+        }
+
+		.promo-unit-center{
+			text-align:center;
+			width:100% !important;
+			margin-top:1%;
+		}
+		
+    }
+}

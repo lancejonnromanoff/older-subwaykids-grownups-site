@@ -1,0 +1,108 @@
+﻿@mixin font-size($sizeValue: 1.4) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+}
+
+@mixin text-stroke($thickness, $color, $blur) {
+    @include text-shadow( $thickness 0 $blur $color, (-$thickness) 0 $blur $color, 0 $thickness $blur $color, 0 (-$thickness) $blur $color, ($thickness/2) ($thickness/2) $blur $color, ((-$thickness)/2) ((-$thickness)/2) $blur $color, ($thickness/2) ((-$thickness)/2) $blur $color, ((-$thickness)/2) ($thickness/2) $blur $color);
+}
+
+/*
+    http://www.sitepoint.com/managing-responsive-breakpoints-sass/
+*/
+@mixin respond-to($breakpoint) {
+
+    @if $breakpoint == "phone" {
+        @media only screen and (min-width: 1px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "phone-landscape" {
+        @media only screen and (min-width: 480px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "android-tablet" {
+        @media only screen and (min-width: 670px) and (orientation: portrait) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "ipad" {
+        @media only screen and (min-width: 670px) {
+            @content;
+        }
+    }
+    
+    @else if $breakpoint == "desktop-md" {
+        @media only screen and (min-width: 959px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "android-tablet-landscape" {
+        @media only screen and (min-width: 960px) and (min-device-pixel-ratio: 1) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "ipad-landscape" {
+        @media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "desktop-lg" {
+        @media only screen and (min-width: 1367px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "iphone4" {
+        @media only screen and (-webkit-device-pixel-ratio: 2) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "iphone6" {
+        @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "iphone6-landscape" {
+        @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "iphone6plus" {
+        @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "iphone6plus-landscape" {
+        @media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "ipad-retina" {
+        @media only screen and (min-width: 768px) and (-webkit-device-pixel-ratio: 2) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "ipad-retina-landscape" {
+        @media only screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Unknown breakpoint: `#{$breakpoint}`. ";
+    }
+}

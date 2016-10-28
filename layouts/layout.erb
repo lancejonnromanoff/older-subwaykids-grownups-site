@@ -1,0 +1,14 @@
+<% wrap_layout :base do %>
+<div id="bgWrapper">
+    <div class="wrapper">
+        <div id="header">
+            <div>
+                <a href="<% if is_app %>#<% else %>/<% end%>" id="logo"></a>
+            </div>
+        </div>
+        <%= yield %>
+        <div class="push"></div>
+    </div>
+    <div id="footerVeggies"></div>
+</div>
+<% end %>

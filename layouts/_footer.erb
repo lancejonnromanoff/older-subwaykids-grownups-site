@@ -1,0 +1,48 @@
+<div id="footer" class="clearfix">
+    <% if is_app %>
+    <div class="for-parents">
+		<!-- Move to top -->
+        <!--<a href="#ForParents" class="btn-for-parents"></a>-->
+        <div id="ForParents">
+            <h3>Feed Their Imaginations</h3>
+            <p>
+                The SUBWAY Kids&trade; App is designed to give your kids access to fun, engaging content that brings their SUBWAY FRESH FIT FOR KIDS&reg; meal to life &mdash; anytime, anywhere.
+            </p>
+            <p>
+                The app offers kids an entertaining experience while giving parents peace of mind knowing their kids have a safe place to play.
+            </p>
+            <p>
+                Plus, our app is always FREE, will never include in-app purchases, or collect any information from your children or any user of the app.
+            </p>
+            <br />
+            <br />
+            <div class="legal">
+                <%= partial "layouts/legal" %>
+            </div>
+        </div>
+    </div>
+    <% else %>
+    <div class="download-app">
+        <div class="content">
+            <p>FUN ON THE GO! GET THE SUBWAY KIDS&trade; APP!</p>
+            <p class="download-now">
+                <span class="ask-parents">Ask your parents to</span>
+                <a href="#" class="btn btn-download-now"></a>
+            </p>
+            <p class="app-stores">
+                <a href="#" class="btn btn-app-store"></a>
+                <a href="#" class="btn btn-google-play"></a>
+                <a href="#" class="btn btn-amazon-app-store"></a>
+            </p>
+        </div>
+    </div>
+    <% end %>
+    <div class="disclosure">
+        <div class="content">
+            <p>				
+			  <!-- <span class="disney-copyright">Star Wars &copy; 2016 & TM Lucasfilm Ltd. All Rights Reserved.</span><br /> -->
+                <%= partial "layouts/legal" %>
+            </p>
+        </div>
+    </div>
+</div>

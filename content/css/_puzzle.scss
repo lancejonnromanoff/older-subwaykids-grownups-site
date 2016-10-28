@@ -1,0 +1,394 @@
+﻿.kids_games_puzzle #header #logo {
+    @include respond-to(desktop-md) {
+		margin-top: -10px;
+    }
+	
+	@include respond-to(desktop-lg) {
+		margin-top: -10px;
+    }
+	
+	}
+	
+	.puzzle {
+    margin: 0 auto;
+	text-align:center;
+
+    @include respond-to(phone) {
+        width: .5 * 626px;
+        margin-top: -35px;
+    }
+
+    @include respond-to(phone-landscape) {
+        width: .5 * 842px;
+    }
+
+    @include respond-to(android-tablet) {
+       // width: (3/8) * 1500px;
+	    width: (3/8) * 850;
+    }
+
+    @include respond-to(ipad) {
+        //width: .5 * 1420px;
+		width: .5 * 1350px;
+    }
+
+    @include respond-to(desktop-md) {
+        width: 850px;
+        margin-top: -75px;
+    }
+
+    @include respond-to(ipad-landscape) {
+        width: 933px;
+        margin-top: -35px;
+    }
+
+    @include respond-to(desktop-lg) {
+        width: 850px;
+        margin-top: -75px;
+    }
+
+    @include respond-to(iphone6) {
+        width: .5 * 730px;
+    }
+
+    @include respond-to(iphone6plus) {
+        width: (1/3) * 1408px / 1.15;
+        margin-top: -15px;
+    }
+	
+	.box {height:40vw;width:44vw;}
+	
+	.box {
+	
+		@include respond-to(phone) {
+				height:60vw;width:66vw;
+				}	
+				
+		@include respond-to(phone-landscape) {
+				height:30vw;width:33vw;
+				}
+		
+		@include respond-to(desktop-md) {
+				height:40vw;width:44vw;
+				}
+				
+		@include respond-to(iphone4) {
+				height:40vw;width:44vw;
+				}
+	
+		@include respond-to(desktop-lg) {
+				height:40vw;width:44vw;
+				}
+				
+		@include respond-to(android-tablet) {
+				height:40vw;width:44vw;
+        		}
+        
+		@include respond-to(ipad) {
+				height:40vw;width:44vw;
+				}
+			
+		@include respond-to(ipad-landscape) {
+				height:40vw;width:44vw;
+				}    
+
+		@include respond-to(iphone6) {
+		   		height:50vw;width:55vw;
+				}
+		
+		@include respond-to(iphone6-landscape) {
+		   		height:30vw;width:33vw;
+				}
+	
+		@include respond-to(iphone6plus) {
+				height:50vw;width:55vw;
+				}
+		
+		@include respond-to(iphone6plus-landscape) {
+		  	 	height:40vw;width:44vw;
+				}	
+				
+				@include respond-to(ipad-retina) {
+		  	 	height:50vw;width:55vw;
+				}	
+				
+				@include respond-to(ipad-retina-landscape) {
+		  	 	height:40vw;width:44vw;
+				}												
+	
+	}
+	
+		
+	#img-puzzle{
+		//background:#525c65;	
+		
+		.instructions-container{
+			z-index:1000;
+			background:#525c65;
+
+			height:100%;
+			width:100%;
+			margin:0 auto !important;
+		
+			
+			@include respond-to(phone) {
+				margin-left:-5px;
+			}
+
+			@include respond-to(phone-landscape) {
+				margin-left:-5px;
+			}
+
+			@include respond-to(iphone6) {
+				margin-left:-5px;
+			}
+
+			@include respond-to(iphone6plus) {
+				margin-left:-5px;
+			}
+
+			@include respond-to(android-tablet) {
+				margin-left:-10px;
+			}
+			
+			@include respond-to(iphone6-landscape) {
+			}
+			
+			@include respond-to(ipad) {
+				margin-left:-5px;
+			}
+
+			@include respond-to(desktop-md) {
+			}
+			
+			@include respond-to(iphone6-landscape) {
+			}
+			
+			@include respond-to(iphone6plus) {
+				margin-left:-5px;
+			}
+			
+			@include respond-to(ipad-landscape) {
+				margin-left:-5px;
+			}
+
+			@include respond-to(desktop-lg) {
+			}
+		
+			.instruct-btns{
+				width:100%;
+				height:10%;
+				border:0px solid #ffffff;
+				
+				.arrow-btn-left{
+					width:10%;
+					float:left;			
+				}
+				
+				.btn-prev{
+					float:left;
+					width:80%;
+					text-align:center;
+					margin-top:5px;
+				}
+				.arrow-btn-right{
+					width:10%;
+					float:left;
+				}
+			}
+			
+			.instructions{
+				height:81%;
+			background-image: image-url('../../kids/games/puzzle/img/instruct-bkg.jpg');
+			background-repeat:x;
+				margin:0 1% 0 1%;
+				display:inline-block;
+				padding: 1%;
+
+				@include respond-to(phone) {
+					height: 81%;
+				}
+
+				@include respond-to(phone-landscape) {
+					height:82%;
+				}
+
+				@include respond-to(iphone6) {
+					height:83%;
+				}
+				
+				@include respond-to(iphone6-landscape) {
+					height:83%;
+				}
+				
+				@include respond-to(iphone6plus) {
+					height:84%;	
+				}
+				
+				@include respond-to(iphone6plus-landscape) {
+					height:84%;	
+				}
+
+				@include respond-to(android-tablet) {
+
+					height:85%;
+				}
+
+				@include respond-to(ipad) {
+					height:85%;
+				}
+
+				@include respond-to(desktop-md) {
+					height:85%;
+				}
+				
+				@include respond-to(ipad-landscape) {
+					height: 85%;
+					border-bottom: 5px solid #525c65;
+				}
+				
+				@include respond-to(ipad-retina) {
+					height: 85%;
+					border-bottom: 5px solid #525c65;
+				}
+				
+				@include respond-to(ipad-retina-landscape) {
+					height: 85%;
+					border-bottom: 5px solid #525c65;
+				}
+
+				@include respond-to(desktop-lg) {
+					height:84%;
+				}
+			
+			
+				.heading{
+					font-family:"Neutraface";
+					color:#fff;
+					text-align:center;
+					margin:0 !important;
+					padding-top:4%;
+					line-height:1.2em;
+					@include single-text-shadow(2px, 2px, 1px, 0, rgba(16, 67, 87, .55));
+					
+					@include respond-to(phone) {
+						@include font-size(1.1);
+					}
+
+					@include respond-to(phone-landscape) {
+						@include font-size(1.1);
+						padding-top:2%;
+					}
+
+					@include respond-to(iphone6) {
+						@include font-size(1.9);
+					}
+					
+					@include respond-to(iphone6-landscape) {
+						@include font-size(1.9);
+					}
+
+					@include respond-to(iphone6plus) {
+						@include font-size(2.4);
+					}
+					
+					@include respond-to(iphone6plus-landscape) {
+						@include font-size(2.4);
+					}
+
+					@include respond-to(android-tablet) {
+						@include font-size(2.9);
+					}
+
+					@include respond-to(ipad) {
+						@include font-size(2.9);
+					}
+					
+					@include respond-to(ipad-landscape) {
+						@include font-size(2.9);
+					}
+	
+					@include respond-to(desktop-md) {
+						@include font-size(2.9);
+					}
+
+					@include respond-to(desktop-lg) {
+						@include font-size(2.9);
+					}					
+				}		
+			
+				.description{
+					font-weight:bold;
+					text-align:center;
+					color:#000;
+					@include font-size(0.9);
+					/*padding:5px 50px 0px 50px;	*/		
+				
+					@include respond-to(phone) {
+						@include font-size(0.5);
+					}
+
+					@include respond-to(phone-landscape) {
+						@include font-size(0.9);
+					}
+
+					@include respond-to(iphone6) {
+						@include font-size(0.8);
+					}
+					
+					@include respond-to(iphone6-landscape) {
+						@include font-size(0.9);
+					}
+
+					@include respond-to(iphone6plus) {
+						@include font-size(0.9);	
+					}
+					
+					@include respond-to(iphone6plus-landscape) {
+						@include font-size(0.9);	
+					}
+					
+					@include respond-to(android-tablet) {
+						@include font-size(1.3);
+					}
+
+					@include respond-to(ipad) {
+						@include font-size(1.3);
+					}
+					
+					@include respond-to(ipad-landscape) {
+						@include font-size(1.3);
+					}
+					
+					@include respond-to(ipad-retina) {
+						@include font-size(1.8);
+					}
+					
+					@include respond-to(ipad-retina-landscape) {
+						@include font-size(1.7);
+					}
+		
+					@include respond-to(desktop-md) {
+						@include font-size(2);
+					}
+
+					@include respond-to(desktop-lg) {
+						@include font-size(2);
+					}
+				}
+				
+				.puzzle-btn-play{
+					text-align:center;
+					
+					@include respond-to(iphone6plus-landscape) {
+						width:50%;
+						margin:0 auto;
+					}
+				}
+			}
+		}	
+		
+	}
+	
+
+}

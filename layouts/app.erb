@@ -1,0 +1,9 @@
+<% wrap_layout :layout do %>
+
+<%= yield %>
+
+<% content_for :head do %>
+<%= javascript_include_tag "/cordova", "app" %>
+<% end %>
+
+<% end %>

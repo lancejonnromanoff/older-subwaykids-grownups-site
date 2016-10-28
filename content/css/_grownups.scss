@@ -1,0 +1,913 @@
+﻿$grownups-break-very-small: 320px;
+$grownups-break-small: 480px;
+$grownups-break-medium: 640px;
+$grownups-break-menu: 800px;
+$grownups-break-large-menu: 940px;
+$grownups-break-large: 1020px;
+$grownups-break-header: 1400px;
+$grownups-break-extra-large: 1560px;
+$grownups-dark-green : #008444;
+$grownups-light-green: #77bc43;
+$grownups-medium-grey: #8f8e88;
+$grownups-dark-grey: #4f4e44;
+ $nutrition-info-height: 400px;	
+
+body.grownups {
+		background-color: #fff;
+		background-image: none;
+		max-width: 1700px;
+		margin: 0 auto;
+		transform-origin: 50% 0;
+		-moz-transform-origin: 50% 0;
+		-webkit-transform-origin: 50% 0;
+		-ms-transform-origin: 50% 0;
+		-o-transform-origin: 50% 0;
+		transform: scale(0.75);
+		-moz-transform: scale(0.75);
+		-webkit-transform: scale(0.75);
+		-ms-transform: scale(0.75);
+		-o-transform: scale(0.75);
+		
+	@media screen and (max-width: $grownups-break-menu) {
+		transform: scale(0.8);
+		-moz-transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		-ms-transform: scale(0.8);
+		-o-transform: scale(0.8);
+		}	
+	@media screen and (max-width: $grownups-break-medium) {
+		transform: scale(0.85);
+		-moz-transform: scale(0.85);
+		-webkit-transform: scale(0.85);
+		-ms-transform: scale(0.85);
+		-o-transform: scale(0.85);
+		}	
+	@media screen and (max-width: $grownups-break-small) {
+		transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
+	}	
+	@media screen and (max-width: $grownups-break-very-small) {
+		transform: scale(1);
+		-moz-transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		}
+}
+
+
+body[class*='grownups_freshfit_index'] li.menu-1, body[class*='grownups_promotions'] li.menu-2, body[class*='grownups_fit-for-life'] li.menu-3, body[class*='grownups_hitc'] li.menu-3 {
+				border-bottom: 2px solid $grownups-dark-green;
+				}	
+				
+.grownups {
+		
+	&.main-content {padding-top:1px;
+	@media screen and (max-width: $grownups-break-menu) {
+					padding-top: 115px;
+  			}
+	@media screen and (max-width: $grownups-break-large) {
+					padding-top: 130px;
+		}
+	}
+	
+	a {text-decoration: none; color:inherit;}
+				
+	img {width: 96%; padding: 0 2%;}	
+	
+	h2 {
+		color: $grownups-light-green;
+		text-transform: uppercase;
+		font-family: "BrooklynSamuelsFiveFat";
+		padding: 25px 0 10px 0;
+		font-size: 48px;	
+		line-height: 40px;
+		@media screen and (max-width: $grownups-break-medium) {
+						font-size: 23px;	
+						line-height: 30px;
+  			}
+		
+		}
+	h3 {
+		font-family: "BrooklynSamuelsFiveFat";
+		}	
+	p, td {
+	font-family: "BrooklynSamuelsFiveMedium";
+	color: $grownups-medium-grey;
+	font-size: 21px;
+	margin-top: 0.333em;
+		@media screen and (max-width: $grownups-break-medium) {
+			margin-top: 0;
+		}
+
+	}
+	
+	.cta {
+	font-family: "BrooklynSamuelsFiveFat";
+	display: inline-block;
+	border-radius: 7px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	background: #329c54; 
+	background: -moz-linear-gradient(top,  #329c54 0%, #008444 100%); 
+	background: -webkit-linear-gradient(top,  #329c54 0%,#008444 100%); 
+	background: linear-gradient(to bottom,  #329c54 0%,#008444 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#329c54', endColorstr='#008444',GradientType=0 ); 	
+	padding: 5px 10px;
+	@media screen and (max-width: $grownups-break-medium) {
+		display: block;
+  			}
+		.pointer	{
+			font-family: arial;
+			}
+	}
+	
+	.index-link {
+		position: absolute;
+		z-index: 1001;
+		height: 130px;
+		top: 0;
+		@media screen and (min-width: $grownups-break-header) {
+			left: 385px;
+		}
+		@media screen and (min-width: $grownups-break-large) and (max-width: $grownups-break-header) {
+			left: 185px;
+		}
+		@media screen and (max-width: $grownups-break-large) {
+			position: relative;
+			margin: -130px auto 25px auto;
+			height: 105px;
+		}
+		width: 195px;
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;	
+		}
+	}
+	
+	.grownups-menu-icon {
+		display: none;
+		@media screen and (max-width: $grownups-break-menu) {
+			display: block;			
+			width: 42px;
+			height: 33px;
+			position: absolute;
+			top: 75px;
+			left: 10px;
+			a    {
+			display: block;	
+			width: 42px;
+			height: 33px;
+				img {
+					width: 42px;
+					height: 33px;
+					}
+			}
+		}
+		@media screen and (max-width: $grownups-break-small) {top: 65px;}
+}
+	
+	.grownups-back-to-sk {
+		position: absolute;
+		z-index: 1000;
+		height: 66px;
+		top: 0;
+		right: 10px;
+			img 
+			{
+				width: 15vw;
+				max-width: 148px;	
+			}
+	}
+	
+	.group {margin-bottom: 15px;}
+    
+	#bgWrapper {
+    width: 100%;
+    background-repeat: no-repeat;
+	background-image: image-url('layout/grownups/main_bg.gif');
+	background-color: #fff;   
+		}
+
+#header {
+    overflow: hidden;
+    position: absolute;
+	top: 0;
+	left: 0;
+	@media screen and (max-width: $grownups-break-header) {
+					background-image: image-url('layout/grownups/veggies_header_medium.png');
+  			}
+	width: 100%;
+	height: 130px;
+	background-image: image-url('layout/grownups/veggies_header.png');
+	background-position: top left;
+	background-repeat: repeat-x;
+	@media screen and (max-width: $grownups-break-large) {
+					background-image: image-url('layout/grownups/veggies_header_small.png');
+					background-position:top center;
+					left: 0;
+  			}
+    #logo {
+        visibility: hidden;
+		height: 130px;     
+    }
+}
+
+
+.grownups-nav {
+	margin: 75px auto 12px auto;
+	padding-left: 50px;
+	z-index: 999;
+	position: relative;
+	color: $grownups-light-green;
+	max-width: 960px;
+		@media screen and (max-width: $grownups-break-large) {
+					margin: -20px auto 0px auto;
+					max-width: none;
+					width: 100%;
+					padding-left: 0;
+  			}
+		@media screen and (max-width: $grownups-break-menu) {
+					display: none;
+  			}	
+	ul {
+		display: block;
+		float: right;
+		padding: 0 10px 0 0;
+		@media screen and (max-width: $grownups-break-large) {
+					float: none;
+					margin: 10px auto 0 auto;
+					padding: 0;
+					width: 610px;
+  			}
+		li {
+			font-family: "BrooklynSamuelsFourBold";
+			display: block;
+			float: left;
+			text-transform: uppercase;
+			font-size: 16px;
+			margin-right: 40px;
+				@media screen and (max-width: $grownups-break-menu) {
+						font-size: 15px;
+						margin-right: 15px;
+  			}
+			a {
+				color: $grownups-dark-green;
+				text-decoration: none;
+				padding-top: 5px;
+				}
+			a.off-site {
+				color: $grownups-light-green;
+				}	
+			input {
+				text-transform: uppercase;
+				border-radius: 7px;
+				border: 1px solid $grownups-light-green;
+				color: $grownups-light-green;
+				margin: -3px 3px 0 0;
+				text-align:center;
+				width: 130px;
+				}
+			input[type=submit] {
+				text-transform: uppercase;
+				border-radius: 7px;
+				border: 1px solid $grownups-light-green;
+				margin: -3px 3px 0 0;
+				text-align:center;
+				color: #fff;
+				background-color: $grownups-light-green;
+				width: 35px;
+				}
+			input::-webkit-input-placeholder {
+				color:  $grownups-light-green !important;
+			}
+			input:-moz-placeholder { 
+				color: $grownups-light-green !important;  
+			}
+			input::-moz-placeholder {  
+				color: $grownups-light-green !important;  
+			}
+			input:-ms-input-placeholder {  
+				color: $grownups-light-green !important;  
+			}				
+			}	
+		}
+		li:last-of-type {margin-right: 0;}
+	}
+	
+.grownups-nav-mobile {
+	z-index: 999;
+	position: relative;
+	color: $grownups-light-green;
+	display: none;
+	@media screen and (min-width: $grownups-break-menu) {display: none !important;}
+	width: 100%;
+	background-color: #eee;
+	cursor: pointer;
+	
+	.fa {
+		  display: block;
+		  font-style: normal;
+		  font-weight: bold;
+		  line-height: 1;
+		  float: right;
+		  margin-top: 4px;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.fa-plus:before {
+  content: "+";
+  color: $grownups-dark-green;
+}
+
+.fa-minus:before {
+  content: "–";
+  color: $grownups-dark-green;
+} 	
+	
+	.grownups-submenu {display: none;}
+	
+	ul {
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border-bottom: 5px solid $grownups-light-green;
+		li:last-of-type {
+				border-bottom: 0px;
+				margin: 0;
+				padding: 0;
+				ul {
+					li {
+						a {
+					margin: 0 0 0 40px;	
+						}
+					}
+				}
+				a {
+					margin: 0 10px;
+					padding: 5px 15px;
+					display: block;	
+				}
+				}
+		li {
+			font-family: "BrooklynSamuelsFiveMedium";
+			display: block;
+			text-transform: uppercase;
+			font-size: 16px;
+			margin: 0 10px;
+			padding: 5px 15px;
+			border-bottom: 1px solid $grownups-light-green;
+			ul {
+				background-color: $grownups-light-green;
+				li {
+					border-bottom: 1px solid #fff;
+					margin: 0;
+					padding: 0;
+					a {
+					margin: 0 0 0 40px;	
+				}
+				}
+				li:last-of-type {
+					a {
+						margin: 0 0 0 40px;		
+					}
+				}
+				a {
+					color: #fff;
+				}
+			}
+			a {
+				color: $grownups-dark-green;
+				text-decoration: none;
+				padding-top: 5px;
+				}
+			input {
+				text-transform: uppercase;
+				border-radius: 7px;
+				border: 1px solid $grownups-light-green;
+				color: $grownups-light-green;
+				margin: -3px 3px 0 0;
+				text-align:center;
+				width: 130px;
+				}
+			input[type=submit] {
+				text-transform: uppercase;
+				border-radius: 7px;
+				border: 1px solid $grownups-light-green;
+				margin: -3px 3px 0 0;
+				text-align:center;
+				color: #fff;
+				background-color: $grownups-light-green;
+				width: 35px;
+				}
+			input::-webkit-input-placeholder {
+				color:  $grownups-light-green !important;
+			}
+			input:-moz-placeholder { 
+				color: $grownups-light-green !important;  
+			}
+			input::-moz-placeholder {  
+				color: $grownups-light-green !important;  
+			}
+			input:-ms-input-placeholder {  
+				color: $grownups-light-green !important;  
+			}				
+			}	
+		}
+	}	
+	
+.grownups-footer {
+	ul {
+		display: block;
+		margin: 25px auto;
+		text-align: center;
+		li {
+			font-family: "BrooklynSamuelsFourBold";
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 16px;
+			padding: 0 10px;
+			border-right: 1px solid $grownups-medium-grey;
+			a {
+				color: $grownups-medium-grey;
+				text-decoration: none;
+				}
+			}
+			li:last-of-type {
+				padding-right: 0px;
+				border-right: 0px;
+			}	
+		}
+	}	
+
+
+.index-secondary {
+	background-image: image-url('layout/grownups/second_level_bg.gif');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;	
+	display: block;
+	padding: 3em 0 2em 0;
+	@media screen and (max-width: $grownups-break-menu) {
+					width: 96%;
+					padding: 3em 2% 2em 2%;
+  			}
+		h2 {
+			font-size: 40px;
+			@media screen and (max-width: $grownups-break-medium) {
+						font-size: 28px;	
+						line-height: 24px;
+  			}
+			@media screen and (max-width: $grownups-break-small) {
+						font-size: 24px;	
+						line-height: 20px;
+  			}	
+			text-transform: uppercase;
+			width: 33%;
+			@media screen and (max-width: $grownups-break-large) {
+					width: 90%;
+  			}
+			margin: 0 auto;
+			text-align: center;
+			}
+		.groups {
+			max-width: 960px;
+			@media screen and (max-width: $grownups-break-large) {
+					max-width: 768px;
+  				}
+			@media screen and (max-width: $grownups-break-menu) {
+					max-width: 480px;
+  			}	
+			margin: 0 auto;
+			text-align: center;
+			color: $grownups-dark-green;
+				.group {
+				max-width: 480px;
+				@media screen and (max-width: $grownups-break-large) {
+					max-width: 384px;
+  				}
+				@media screen and (max-width: $grownups-break-menu) {
+					max-width: 480px;
+  				}	
+				float: left;
+				text-align: left;
+				display: inline-block;
+				
+				p {
+					color: $grownups-dark-green;
+					padding: 0 10px 10px 10px;
+					font-size: 18px;	
+					margin: 0;
+					font-family: "BrooklynSamuelsFourMedium";
+				}
+				h3 {
+					padding: 20px 10px 5px 10px;
+					font-size: 24px;
+					margin: 0;
+					font-family: "BrooklynSamuelsFourBold";
+					text-transform: uppercase;
+				}
+			}
+	}
+}
+
+
+.good-food {
+	background-image: image-url('layout/grownups/good_food_bg.gif');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-blend-mode: luminosity, normal;
+	width: 100%;	
+	display: block;
+	padding: 3em 0 2em 0;
+	@media screen and (max-width: $grownups-break-menu) {
+					width: 96%;
+					padding: 3em 2% 2em 2%;
+  			}
+		h2 {
+			font-size: 40px;
+			@media screen and (max-width: $grownups-break-medium) {
+						font-size: 23px;	
+						line-height: 30px;
+  			}
+			text-transform: uppercase;
+			width: 33%;
+			@media screen and (max-width: $grownups-break-large) {
+					width: 90%;
+  			}
+			margin: 0 auto;
+			text-align: center;
+			color: $grownups-dark-green;
+			}
+		.groups {
+			max-width: 960px;
+			margin: 0 auto;
+			text-align: center;
+			color: $grownups-dark-green;
+			.groups {
+				max-width: 480px;
+				float: left;
+				@media screen and (max-width: $grownups-break-large-menu) {
+					max-width: 900px;
+					margin: 0 auto;
+					float: none;
+  			}
+				.group:first-of-type {
+				width: 33%;
+				max-width: 135px;
+				float: left;
+				text-align: left;
+				display: inline-block;
+				@media screen and (max-width: $grownups-break-medium) {
+					width: 100%;
+					display: block;
+					float: none;
+					max-width: none;
+  					}
+				}
+				.group:last-of-type {
+				width: 67%;
+				max-width: 330px;
+				float: left;
+				text-align: left;
+				display: inline-block;
+				@media screen and (max-width: $grownups-break-large-menu) {
+					width: 75%;
+					max-width: 780px;
+  			}
+				@media screen and (max-width: $grownups-break-medium) {
+					width: 100%;
+					display: block;
+					float: none;
+					max-width: none;
+  					}
+				}
+				
+				img {float: left;
+				max-width: 150px;
+				}
+				
+				p {
+					color: $grownups-dark-green;
+					padding: 0 10px 10px 10px;
+					font-size: 18px;	
+					margin: 0;
+					font-family: "BrooklynSamuelsFourMedium";
+				}
+				h3 {
+					padding: 20px 10px 5px 10px;
+					font-size: 24px;
+					margin: 0;
+					font-family: "BrooklynSamuelsFourBold";
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+
+
+
+.fit-for-life {
+	
+		&.hitc  {
+			.groups {
+				.group:first-of-type {
+					width: 33%;
+					max-width: 340px;
+					@media screen and (max-width: $grownups-break-small) {
+						width: 100%;
+						max-width: none;
+  			}
+				}
+				.group:last-of-type {
+					width: 63%;
+					margin-left: 3%;
+					max-width: none;
+					@media screen and (max-width: $grownups-break-small) {
+						width: 100%;
+						margin-left: 0;
+						float: none;
+  			}
+					
+				}
+					
+				.group {
+					margin-right: 0;
+				
+					p	{
+						margin: 0 0 0.5em 0;
+						width: 100%;
+						strong {font-family: "BrooklynSamuelsFiveFat";}	
+					}
+			
+					h3 {
+						color: $grownups-dark-green;
+						font-size: 24px;
+						margin: 0;
+					}
+					h4 {
+						color: $grownups-light-green;
+						font-size: 24px;
+						margin: 0;
+						font-family: "BrooklynSamuelsFiveFat";	
+					}
+			}
+		}
+			
+			
+			
+			
+			}
+	
+	background-color: transparent;
+	max-width: 960px;
+	margin: 0 auto;
+	img {padding: 0;}
+	@media screen and (max-width: $grownups-break-large) {
+					padding: 0 2%;
+  			}
+	
+	.groups {
+		
+		text-align: center;
+		
+		.group {
+		width: 100%;
+		max-width: 280px;
+		margin-right: 33px;
+		float: none;
+		display: inline-block;
+		text-align: left;
+		vertical-align: top;
+	
+		p	{
+			margin: 0 0 0.5em 0;
+			width: 100%;	
+		}
+		
+		h3 {
+			color: $grownups-dark-green;
+			font-size: 24px;
+			margin-bottom: 0;
+			width: 100%;	
+		}
+		}
+	}
+}
+
+.fresh-fit {
+	background-color: transparent;
+	max-width: 960px;
+	margin: 0 auto;
+	
+	@media screen and (max-width: $grownups-break-large) {
+					padding: 0 2%;
+  			}
+}
+
+.fresh-fit-secondary {
+	width: 100%;	
+	display: block;
+	padding: 3em 0 2em 0;
+	a {
+		color: $grownups-light-green;
+		text-decoration: none;	
+		
+		span:before {
+			content: "+";
+			display: inline-block;
+			width: 20px;
+		}
+	}
+	
+	a.activeClass {
+			span:before {
+				content: "-";
+			}
+		}
+	
+	.cta {
+					color: #fff;
+					background: #a0ce3d;
+					background: -moz-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: -webkit-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: -webkit-gradient(linear, 0 0, 0 100%, from(#a0ce3d), to(#77bc43));
+					background: -o-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: linear-gradient(#a0ce3d 0%, #77bc43 100%); 
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0ce3d', endColorstr='#77bc43',GradientType=0 ); 
+					float: right;
+					@media screen and (max-width: $grownups-break-medium) {
+						width: 96%;
+						display: block;
+  					}
+		}
+	@media screen and (max-width: $grownups-break-menu) {
+					width: 96%;
+					padding: 3em 2% 2em 2%;
+  			}
+		h2 {
+			font-size: 40px;
+			@media screen and (max-width: $grownups-break-medium) {
+						font-size: 28px;	
+						line-height: 24px;
+  			}
+			@media screen and (max-width: $grownups-break-small) {
+						font-size: 24px;	
+						line-height: 20px;
+  			}	
+			text-transform: uppercase;
+			width: 33%;
+			@media screen and (max-width: $grownups-break-large) {
+					width: 90%;
+  			}
+			margin: 0 auto;
+			text-align: center;
+			}
+		.groups {
+			max-width: 960px;
+			@media screen and (max-width: $grownups-break-large) {
+					max-width: 768px;
+  				}
+			@media screen and (max-width: 815px) {
+					max-width: 480px;
+  				}	
+			margin: 0 auto;
+				.group_pairs {
+					max-width: 480px;
+					@media screen and (max-width: $grownups-break-large) {
+					max-width: 384px;
+  					}
+					@media screen and (max-width: 815px) {
+						max-width: 480px;
+  					}
+	/*				@media screen and (max-width: $grownups-break-small) {
+						max-width: 320px;
+						display: block;
+						margin: 0 auto;
+						float: none;
+  					}*/
+					float: left;
+					display: block;
+					margin: 0 auto;
+					.group	{
+						float: none;	
+						display: table-cell;
+				/*		@media screen and (max-width: $grownups-break-small) {
+						width: 100%;
+						max-width: 320px;
+						display: block;
+						margin: 0 auto;
+						float: none;
+  					}*/
+					}
+			}
+				.group {
+				max-width: 220px;
+	/*			@media screen and (max-width: $grownups-break-small) {
+						width: 100%;
+						max-width: 320px;
+						display: block;
+						margin: 0 auto;
+						float: none;
+  					}*/
+				padding-right: 20px;
+				float: left;
+				display: inline-block;
+				
+				p {	
+					color: $grownups-medium-grey;
+					font-size: 18px;	
+					margin: 0;
+					font-family: "BrooklynSamuelsFiveMedium";
+				}
+				a {	
+					color: $grownups-light-green;
+					font-size: 18px;
+					font-family: "BrooklynSamuelsFiveMedium";
+				}
+				h3 {
+					color: $grownups-dark-green;
+					font-size: 18px;
+					margin: 0 0 10px 0;
+				}
+			}
+	}
+}
+
+.nutrition {
+		margin: 20px auto;		
+		table {width: 50%; float:left;}
+		th {text-align: left;font-weight: 900;font-size:24px;}
+		td  {
+			font-family: arial;
+			padding: 5px 15px;
+			strong {color: #000;}
+			@media screen and (max-width: $grownups-break-medium) {
+					font-size: 14px;
+  			}
+		}
+}
+
+.push {
+	display: none;
+}
+
+#footerVeggies {
+    background-repeat: no-repeat;
+    background-size: 100%;
+	background-color: #fff;
+	background-position: bottom;
+	background-image: image-url('layout/grownups/veggies_footer.jpg'); 
+	padding-bottom: 0;
+	height: 14%;
+	display: block;
+}
+
+
+
+
+#footer {
+    position: relative;
+
+    .download-app {
+
+        .content {
+            p {
+                margin: 0;
+				margin-top:2%;
+                font-family: "BrooklynSamuelsFourFat";
+                color: $grownups-light-green;
+            }
+
+          }
+
+       }
+   }
+   
+.wrapper {
+    min-height: 86%;
+    position: relative;
+    margin: 0 auto;
+		}
+
+}
+
+
+		
+		
+		
+
+	
+		
+
+

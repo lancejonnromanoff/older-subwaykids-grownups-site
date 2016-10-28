@@ -1,0 +1,392 @@
+﻿.memory {
+    margin: 0 auto;
+
+    @include respond-to(phone) {
+        width: .5 * 626px;
+        margin-top: -35px;
+    }
+
+    @include respond-to(phone-landscape) {
+        width: .5 * 842px;
+    }
+
+    @include respond-to(android-tablet) {
+       // width: (3/8) * 1500px;
+	    width: (3/8) * 850;
+    }
+
+    @include respond-to(ipad) {
+        //width: .5 * 1420px;
+		width: .5 * 1350px;
+    }
+
+    @include respond-to(desktop-md) {
+        width: 850px;
+        margin-top: -65px;
+    }
+
+    @include respond-to(ipad-landscape) {
+        width: 933px;
+        margin-top: -35px;
+    }
+
+    @include respond-to(desktop-lg) {
+        width: 850px;
+        margin-top: -65px;
+    }
+
+    @include respond-to(iphone6) {
+        width: .5 * 730px;
+    }
+
+    @include respond-to(iphone6plus) {
+        width: (1/3) * 1408px / 1.15;
+        margin-top: -15px;
+    }
+
+    .box {
+        @include respond-to(phone) {
+            height: .5 * 670px;
+        }
+
+        @include respond-to(phone-landscape) {
+            height: .5 * 516px;
+        }
+
+        @include respond-to(iphone6) {
+            height: .5 * 960px;
+        }
+
+        @include respond-to(iphone6plus) {
+            height: (1/3) * 1700px / 1.15;
+        }
+
+
+        @include respond-to(android-tablet) {
+            height: (3/8) * 1960px;
+        }
+
+        @include respond-to(ipad) {
+            height: .5 * 1623px;
+        }
+
+        @include respond-to(desktop-md) {
+            height: 620px;
+        }
+		
+		@include respond-to(iphone6-landscape) {
+			height:300px;
+		}
+		
+		@include respond-to(iphone6plus-landscape) {
+            height: .5 * 414px;
+        }
+
+        @include respond-to(ipad-landscape) {
+            height: 570px;
+        }
+
+        @include respond-to(desktop-lg) {
+            height: 780px;
+        }
+    }
+	
+	
+		
+	#img-memory{
+		//background:#525c65;	
+		//border:1PX SOLID #000;
+		//background-image: image-url('kids/games/memory/sprites/memory_bkg.jpg');
+		.instructions-container{
+			z-index:1000;
+			background-image: image-url('kids/games/memory/sprites/memory_bkg.jpg');
+			background-repeat: no-repeat;
+			height:100%;
+			width:99%;
+			margin:0 auto !important;
+		
+			
+			@include respond-to(phone) {
+				margin-left:-5px;
+			}
+
+			@include respond-to(phone-landscape) {
+				margin-left:-5px;
+			}
+
+			@include respond-to(iphone6) {
+				height:75%;
+				margin-left:-5px;
+			}
+
+			@include respond-to(iphone6plus) {
+				margin-left:-5px;
+			}
+
+			@include respond-to(android-tablet) {
+				margin-left:-10px;
+				width:98.5%;
+				height:88.5%;
+			}
+			
+			@include respond-to(iphone6-landscape) {
+				height:50%;
+			}
+			@include respond-to(ipad) {
+				margin-left:-5px;
+				//width:98.5%;
+				//width:100%;
+				height:88.5%;
+			}
+
+			@include respond-to(desktop-md) {
+				//margin-left:-1px;
+				//width:100%;
+				//height:100%;
+			}
+			
+			@include respond-to(iphone6-landscape) {
+				height:100%;
+			}
+			
+			@include respond-to(iphone6plus) {
+				margin-left:-5px;
+				height:100%;
+			}
+			
+			@include respond-to(ipad-landscape) {
+				margin-left:-5px;
+			}
+
+			@include respond-to(desktop-lg) {
+				//height:100%;
+			}
+		
+			.instruct-btns{
+				width:100%;
+				height:10%;
+				border:0px solid #ffffff;
+				
+				.arrow-btn-left{
+					width:10%;
+					float:left;			
+				}
+				
+				.btn-prev{
+					float:left;
+					width:80%;
+					text-align:center;
+					margin-top:5px;
+				}
+				.arrow-btn-right{
+					width:10%;
+					float:left;
+				}
+			}
+			
+			.instructions{
+				//height:85%;
+				//height:50%;
+				height:auto;
+				background:#6abd45;
+				margin:10% 10% 0 10%;
+				//display:inline-block;
+				padding:5%;
+
+				@include respond-to(phone) {
+					
+				}
+
+				@include respond-to(phone-landscape) {
+					//height:82%;
+				}
+
+				@include respond-to(iphone6) {
+					//height:85%;
+				}
+
+				@include respond-to(iphone6plus) {
+					//height:89%;	
+				}
+
+				@include respond-to(android-tablet) {
+
+					//height:88.5%;
+				}
+
+				@include respond-to(ipad) {
+					//height:88%;
+				}
+
+				@include respond-to(desktop-md) {
+					//height:65%;
+				}
+				
+				@include respond-to(iphone6-landscape) {
+					//height:86%;
+				}
+				
+				@include respond-to(iphone6plus-landscape) {
+					//height:78%;	
+				}
+
+				@include respond-to(ipad-landscape) {
+
+				}
+
+				@include respond-to(desktop-lg) {
+					//height:88%;
+				}
+			
+			
+				.heading{
+					font-family:Brady;
+					color:#fff200;
+					//background:#5cced6;	
+					//font-style:italic;
+					
+					text-align:center;
+					margin:0 !important;
+					padding-top:4%;
+									
+					@include text-stroke(3px, #00206a, 1px);
+					line-height:1.2em;
+					
+					@include respond-to(phone) {
+						@include font-size(2.9);
+					}
+
+					@include respond-to(phone-landscape) {
+						@include font-size(1.9);
+						padding-top:2%;
+					}
+
+					@include respond-to(iphone6) {
+						@include font-size(2.9);
+					}
+
+					@include respond-to(iphone6plus) {
+						@include font-size(2.9);
+					}
+
+					@include respond-to(android-tablet) {
+						@include font-size(5.9);
+					}
+
+					@include respond-to(ipad) {
+						@include font-size(5.9);
+					}
+					
+					@include respond-to(iphone6-landscape) {
+						@include font-size(2.9);
+					}
+
+					@include respond-to(desktop-md) {
+						@include font-size(3.9);
+					}
+
+					@include respond-to(ipad-landscape) {
+						@include font-size(5.9);
+					}
+					
+					@include respond-to(iphone6plus-landscape) {
+						@include font-size(1.5);
+					}
+
+					@include respond-to(desktop-lg) {
+						@include font-size(3.9);
+					}					
+				}		
+			
+				.description{
+					font-family:HelveticaNeue;
+					font-weight:normal;
+					text-align:center;
+					color:#ffffff;
+					padding:15px 50px 0px 50px;			
+				
+					@include respond-to(phone) {
+						@include font-size(.9);
+					}
+
+					@include respond-to(phone-landscape) {
+						@include font-size(.8);
+					}
+
+					@include respond-to(iphone6) {
+						@include font-size(1);
+					}
+
+					@include respond-to(iphone6plus) {
+						@include font-size(1.625);
+						padding:0 50px 0px 50px;	
+					}
+
+					@include respond-to(android-tablet) {
+						@include font-size(2.9);
+					}
+
+					@include respond-to(ipad) {
+						@include font-size(2.5);
+					}
+					
+					@include respond-to(iphone6-landscape) {
+						@include font-size(.9);
+					}
+					
+					@include respond-to(iphone6plus-landscape) {
+						@include font-size(.8);
+						padding:0 50px 0px 50px;	
+					}
+
+					@include respond-to(desktop-md) {
+						@include font-size(1.5);
+					}
+
+					@include respond-to(ipad-landscape) {
+						@include font-size(1.9);
+						padding-top:0;
+					}
+
+					@include respond-to(desktop-lg) {
+						@include font-size(1.5);
+					}
+				}
+				
+				.memory-btn-play{
+					text-align:center;
+					
+					@include respond-to(iphone6plus-landscape) {
+						width:50%;
+						margin:0 auto;
+					}
+					
+					@include respond-to(desktop-md) {
+						width:auto;
+					}
+				}
+			}
+			.game-message-container{
+				display:none;
+				.game-menu{
+					background-image: image-url('kids-home/games/memory/sprites/');
+				}
+				.game-level{
+					background-image: image-url('kids-home/games/memory/sprites/');
+					display:none;
+				}
+				.game-over{
+					background-image: image-url('kids-home/games/memory/sprites/');
+					display:none;
+				}
+				.game-victory{
+					background-image: image-url('kids-home/games/memory/sprites/');
+					display:none;
+				}
+			}
+		}	
+		
+	}
+	
+
+}

@@ -1,0 +1,667 @@
+﻿$grownups-break-promo: 900px;
+$grownups-center-message-width: 350px;
+
+.grownups {
+	
+.strong-promo {font-family: "BrooklynSamuelsFiveFat";	}
+
+
+.promo {
+		background-image: image-url('layout/grownups/promo/promo_bg.jpg');
+		@media screen and (max-width: $grownups-break-large) {
+					background-image: none;
+  			}
+		background-repeat: repeat-x;
+		background-position: bottom center;
+		width: 100%;	
+		display: block;
+		padding: 1.5em 0 0 0;
+			h2 {
+				font-size: 46px;
+					@media screen and (max-width: $grownups-break-medium) {
+						font-size: 23px;	
+						line-height: 30px;
+  			}
+				text-transform: uppercase;
+				text-align: left;
+				line-height: 42px;
+				padding: 0 0 10px 0;
+				@media screen and (max-width: $grownups-break-large) {
+						padding: 40px 0 10px 0;	
+					}
+				}
+			
+			.cta {
+					color: #fff;
+					background: #a0ce3d;
+					background: -moz-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: -webkit-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: -webkit-gradient(linear, 0 0, 0 100%, from(#a0ce3d), to(#77bc43));
+					background: -o-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: linear-gradient(#a0ce3d 0%, #77bc43 100%); 
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0ce3d', endColorstr='#77bc43',GradientType=0 ); 
+				}	
+				
+				.groups {		
+				margin: 0 auto;
+							
+					.group {
+						background-repeat: no-repeat; 
+						background-position: bottom center;
+						width: 100%;
+						max-width: ($grownups-center-message-width - 60px);
+						background: image-url('layout/grownups/semi-transparent-background.png');
+						border-radius: 20px;
+						padding: 30px 30px 15px 30px;					
+						text-align: center;
+						display: block;
+						margin: 50px auto;
+						img {display: none;}
+							@media screen and (max-width: $grownups-break-large) {
+								background-repeat: no-repeat; 
+								background-position: bottom center;
+								width: 100%;
+								max-width: none;
+								background: transparent;
+								border-radius: none;
+								padding: 0;
+								margin: 0 auto;
+								img {
+									display: block;
+									width: 100%;
+									padding: 0;								
+								};
+							}
+						
+						p {
+							color: #000;
+							font-family: "BrooklynSamuelsFiveMedium";
+							font-size: 22px;	
+							margin: 0 0 20px 0;
+							text-align: left;
+						}
+						
+					}		
+				}
+			}
+			
+	
+	
+		
+	
+.promotions {
+	background-color: transparent;
+	max-width: 960px;
+	margin: 0 auto;
+	h3, h4 {margin-bottom: 0;}
+	p {margin-top: 0;}
+	.cta {
+					color: #fff;
+					background: #a0ce3d;
+					background: -moz-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: -webkit-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: -webkit-gradient(linear, 0 0, 0 100%, from(#a0ce3d), to(#77bc43));
+					background: -o-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: linear-gradient(#a0ce3d 0%, #77bc43 100%); 
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0ce3d', endColorstr='#77bc43',GradientType=0 ); 
+				}
+	@media screen and (max-width: $grownups-break-large) {
+					padding: 0 2%;
+  			}
+			
+	.slideshow {
+		width: 444px;
+		height: 440px;
+		margin: 0 auto 50px auto;
+		
+		@media screen and (max-width: 444px) {
+				transform-origin: 50% 0;
+				-moz-transform-origin: 50% 0;
+				-webkit-transform-origin: 50% 0;
+				-ms-transform-origin: 50% 0;
+				-o-transform-origin: 50% 0;
+				transform: scale(0.71);
+				-moz-transform: scale(0.71);
+				-webkit-transform: scale(0.71);
+				-ms-transform: scale(0.71);
+				-o-transform: scale(0.71);
+				margin: 0 0 -100px -24px;
+		}
+		@media screen and (max-width: 424px) {
+				margin: 0 0 -100px -44px;
+		}
+		@media screen and (max-width: 404px) {
+				margin: 0 0 -100px -64px;
+		}
+		
+		
+		/*
+Item Name: jQuery Carousel Evolution
+Author: Mapalla
+Author URI: http://codecanyon.net/user/Mapalla
+Version: 1.1
+*/
+
+/* _______________________________________________ */
+
+/* CONTAINER */
+/* _______________________________________________ */
+
+.carousel
+{
+	position :relative ;
+	margin :0 auto;
+	width :100%;
+	width: 444px;
+	height :auto;
+	border :none;
+	overflow : hidden;
+	
+}
+
+/* _______________________________________________ */
+
+/* SLIDES */
+/* _______________________________________________ */
+
+/* slide container */
+.carousel .slides
+{
+	margin :0;
+	padding :0;
+	border :none;
+	list-style :none;
+	position :relative ;
+	overflow :visible ;
+}
+
+/* slide item */
+.carousel .slides .slideItem 
+{
+	position :absolute ;
+	cursor :pointer ;
+	overflow : hidden;
+	padding :0;
+	margin :0;
+	border :none;
+	width: 284px;
+	height: 440px;
+	
+}
+
+.carousel .slides .slideItem a
+{
+	display: block ;
+	text-decoration :none;
+	margin :0;
+	padding :0;
+	border :none;
+	outline :none;
+}
+
+.carousel .slides .slideItem img
+{
+	margin :0;
+	padding :0;
+	border :none;
+	width: 284px;
+	height: 440px;
+}
+
+/* _______________________________________________ */
+
+/* DIRECTION BUTTON */
+/* _______________________________________________ */
+
+.carousel .nextButton
+{
+	position :absolute ;
+	right :0px;
+	top :200px;
+	width :40px;
+	height :40px;
+	background : url("/content/img/layout/grownups/slideshow/next_button.png") no-repeat center;
+	cursor :pointer ;
+	z-index :9999;
+}
+
+.carousel .prevButton
+{
+	position :absolute ;
+	left :0px;
+	top :200px;
+	width :40px;
+	height: 40px;		
+	background : url("/content/img/layout/grownups/slideshow/prev_button.png");
+	cursor :pointer ;
+	z-index :9999;
+}
+
+/* _______________________________________________ */
+
+/* NAVIGATION BUTTON */
+/* _______________________________________________ */
+
+/* buttons container */
+.carousel .buttonNav
+{
+	position : relative ;
+	margin :0 auto;
+	z-index :999;
+}
+
+/* numbers */
+.carousel .buttonNav .numbers 
+{
+	position :relative ;
+	float :left ;
+	margin :5px;
+	color : #828282 ;
+	cursor :pointer ;
+	font-weight :bold ;
+	text-decoration :none;
+	font-size :1em;
+	font-family :Arial, Verdana ;
+}
+
+.carousel .buttonNav .numbers:hover
+{
+	color: #000;
+	text-decoration :underline;
+}
+
+.carousel .buttonNav .numberActive
+{
+	background : none;
+	color :#000;
+	cursor :default ;
+}
+
+/* bullets */
+.carousel .buttonNav .bullet
+{
+	position :relative ;
+	float :left ;
+	width :17px;
+	height :17px;
+	background : url(/content/img/layout/grownups/slideshow/Bullet-White.png) no-repeat center ;
+	margin :5px;
+	float :left ;
+	cursor :pointer ;
+}
+
+.carousel .buttonNav .bullet:hover
+{
+	background : url(/content/img/layout/grownups/slideshow/Bullet-Black.png) no-repeat center ;
+}
+
+.carousel .buttonNav .bulletActive
+{
+	background : url(/content/img/layout/grownups/slideshow/Bullet-Black.png) no-repeat center ;
+	cursor :default ;
+}
+
+/* ____________________________________________________________ */
+
+/* VIDEO */
+/* ____________________________________________________________ */
+
+.carousel .slides .videoOverlay
+{
+	background :url("/content/img/layout/grownups/slideshow/video.png") no-repeat center; /* play button */
+}
+
+.carousel .slides .spinner
+{
+	background : #000 url(/content/img/layout/grownups/slideshow/loading.gif) no-repeat center; /* video preloader */
+}
+
+		
+		
+		@media screen and (max-width: $grownups-break-small) {
+					display: block;
+  			}
+		.slick-prev:before, .slick-next:before {
+				color: $grownups-light-green;
+				}
+		}
+		
+		
+	.slick-dots li button:before {
+				font-size: 20px;
+				color: #eee;
+				opacity: 0.75;
+			}	
+	
+	.slick-dots li.slick-active button:before {
+				color: $grownups-light-green;
+			}	
+}
+
+.promotions-primary {
+	background-color: transparent;
+	max-width: 960px;
+	margin: 0 auto;
+			h3 {
+					color: $grownups-dark-green;
+					font-size: 30px;
+					line-height: 30px;
+					margin-top: 0;
+						@media screen and (max-width: $grownups-break-medium) {
+						font-size: 20px;
+						line-height: 20px;
+  			}
+						@media screen and (max-width: $grownups-break-small) {
+						font-size: 16px;
+						line-height: 16px;
+  			}	
+				}
+	
+		.group {
+		float: left;
+		}
+	
+		.group:nth-of-type(1) {
+		width: 39%;
+		max-width:384px;
+		img {
+				max-width: 360px;
+				float: right;
+			}
+	/*	@media screen and (max-width: $grownups-break-medium) {
+					max-width: none;
+					img {
+						float: none;
+					}
+  			}*/
+		@media screen and (max-width: $grownups-break-menu) {
+					float: none;
+					width: 100%;
+					max-width: none;
+					img {
+						float: none;
+						margin: 0 auto;
+						display: inherit;
+					}
+  			}	
+			
+		}
+		.group:nth-of-type(2) {
+		width: 59%;
+		margin-left: 2%;
+			@media screen and (max-width: $grownups-break-menu) {
+					float: none;
+					width: 100%;
+					margin-left: 0;
+					max-width: none;
+  			}
+		}
+
+}
+
+.promotions-secondary {
+	background-color: transparent;
+	max-width: 960px;
+	margin: 0 auto;
+	
+			h4 {
+					color: $grownups-dark-green;
+					font-size: 26px;
+					font-family: "BrooklynSamuelsFiveFat";						
+				}
+	
+	.groups {
+		@media screen and (max-width: $grownups-break-menu) {
+						width: 100%;
+						max-width: 480px;
+						margin: 0 auto;
+					}
+		
+		.group {
+		float: left;
+		}
+		
+		.group:nth-of-type(1) {
+		width: 39%;
+				img {display: none;
+					@media screen and (max-width: $grownups-break-menu) {
+						display: block;
+					}
+				}		
+				.cta {
+				margin: 15px 0;
+				@media screen and (max-width: $grownups-break-menu) {
+				width: 96%;
+				float: none;	
+					}
+					
+				}
+		@media screen and (max-width: $grownups-break-menu) {
+				width: 100%;
+				max-width: 480px;
+				margin: 0 auto;
+					}	
+		}
+
+		.group:nth-of-type(2) {
+		width: 59%;	
+		@media screen and (max-width: $grownups-break-menu) {
+				display: none;
+					}	
+		}	
+	}
+}
+
+
+.what-else {
+	background-image: image-url('layout/grownups/whatelse_bg.gif');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;	
+	display: block;
+	padding: 3em 0 2em 0;
+	@media screen and (max-width: $grownups-break-menu) {
+					width: 96%;
+					padding: 3em 2% 2em 2%;
+  			}
+		h2 {
+			font-size: 40px;
+				@media screen and (max-width: $grownups-break-medium) {
+						font-size: 23px;	
+						line-height: 30px;
+  			}
+			text-transform: uppercase;
+			width: 33%;
+			@media screen and (max-width: $grownups-break-large) {
+					width: 90%;
+  			}
+			margin: 0 auto;
+			text-align: center;
+			}
+		.groups {
+			max-width: 960px;
+				@media screen and (max-width: $grownups-break-large) {
+					max-width: 768px;
+  				}
+				@media screen and (max-width: $grownups-break-menu) {
+					max-width: 480px;
+  				}
+			margin: 0 auto;
+			text-align: center;
+				.group_pairs {
+					max-width: 480px;
+					@media screen and (max-width: $grownups-break-large) {
+					max-width: 384px;
+  					}
+					@media screen and (max-width: $grownups-break-menu) {
+						max-width: 480px;
+  					}
+					@media screen and (max-width: $grownups-break-small) {
+						max-width: 320px;
+						display: block;
+						margin: 0 auto;
+						float: none;
+  					}
+					float: left;
+					display: block;
+					margin: 0 auto;
+					.group	{
+						float: none;	
+						display: table-cell;
+				@media screen and (max-width: $grownups-break-menu) {
+						float: none;
+						display:table-cell;
+						margin: 0 auto;
+  					}
+				@media screen and (max-width: $grownups-break-small) {
+						max-width: 320px;
+						display: block;
+						margin: 0 auto;
+  					}
+				}
+			}
+				.group {
+				max-width: 240px;
+				float: left;
+				text-align: center;
+				display: table-cell;
+				img {max-width: 172px;
+				margin: 10px 0;
+				@media screen and (max-width: $grownups-break-small) {
+						margin: 30px 0 10px 0;
+						max-width: 150px;
+  					}
+				}
+				p {
+					padding: 0 30px;	
+					color: $grownups-dark-green;
+					font-size: 18px;	
+					margin: 0;
+					font-family: "BrooklynSamuelsFourMedium";
+				}
+				h3 {
+					padding: 0 30px;	
+					color: $grownups-light-green;
+					font-size: 24px;
+					margin: 0;
+				}
+			}
+	}
+}
+	
+	
+
+
+.promo-fresh-fit-menu {
+	.groups {
+		.group  {
+			float: left;
+				h3 {
+					color: $grownups-dark-green;
+					font-size: 30px;
+					@media screen and (max-width: $grownups-break-medium) {
+						font-size: 20px;
+						line-height: 20px;
+  			}
+						@media screen and (max-width: $grownups-break-small) {
+						font-size: 16px;
+						line-height: 16px;
+  			}		
+				}
+				h4 {
+					color: $grownups-medium-grey;
+					font-size: 24px;
+					font-family: "BrooklynSamuelsFiveMedium";						
+				}
+				.cta {
+					background: #a0ce3d;
+					background: -moz-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: -webkit-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: -webkit-gradient(linear, 0 0, 0 100%, from(#a0ce3d), to(#77bc43));
+					background: -o-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: linear-gradient(#a0ce3d 0%, #77bc43 100%); 
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0ce3d', endColorstr='#77bc43',GradientType=0 ); 
+					}
+	
+		}
+		.group:first-of-type {width: 60%;
+			@media screen and (max-width: $grownups-break-menu) {
+					width: 98%;
+  			}
+		}
+		.group:last-of-type {width: 38%;margin-left: 2%;
+			@media screen and (max-width: $grownups-break-menu) {
+					width: 98%;
+  			}
+		}
+	}
+}
+
+.secondary-promo-fresh-fit-menu {
+	.cta {
+					background: #a0ce3d;
+					background: -moz-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: -webkit-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: -webkit-gradient(linear, 0 0, 0 100%, from(#a0ce3d), to(#77bc43));
+					background: -o-linear-gradient(#a0ce3d 0%, #77bc43 100%);
+					background: linear-gradient(#a0ce3d 0%, #77bc43 100%); 
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0ce3d', endColorstr='#77bc43',GradientType=0 ); 
+					
+	
+					@media screen and (max-width: $grownups-break-menu) {				
+							display: inline-block;
+						}	
+						
+					@media screen and (max-width: $grownups-break-medium) {				
+							display: block;
+						}
+					}
+	@media screen and (min-width: $grownups-break-menu) {				
+		p {display: none}
+	}
+	.groups {
+		margin: 0 auto;
+		.group  {
+			float: left;
+				h3 {
+					color: $grownups-dark-green;
+					font-size: 30px;
+					@media screen and (max-width: $grownups-break-medium) {
+						font-size: 24px;
+						line-height: 20px;
+  			}
+						@media screen and (max-width: $grownups-break-small) {
+						font-size: 20px;
+						line-height: 16px;
+  			}		
+				}
+				h4 {
+					color: $grownups-dark-green;
+					font-size: 24px;
+					font-family: "BrooklynSamuelsFiveFat";						
+				}
+	
+		}
+		.group:first-of-type {width: 70%;
+		@media screen and (min-width: $grownups-break-menu) {
+					p {display: block;}
+  			}
+		@media screen and (max-width: $grownups-break-menu) {
+					h4 {margin-bottom: 0;}
+					p {display: none;}
+  			}
+		@media screen and (max-width: $grownups-break-medium) {
+					width:100%;
+  			}	
+		}
+		.group:last-of-type {width: 28%;margin-left: 2%;
+		@media screen and (max-width: $grownups-break-medium) {				
+							width: 50%;
+						}
+			}
+	}
+}				
+			
+			
+}
+

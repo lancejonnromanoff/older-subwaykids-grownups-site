@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, <% if is_app %>user-scalable=no,<% end %> width=device-width">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <title><%= current_page.data.title || "SUBWAY KIDS&trade;" %></title>
+
+    <%= stylesheet_link_tag "vendor/slick/slick", "vendor/fancybox/jquery.fancybox", "site" %>
+    <% if !is_app %>
+        <%= stylesheet_link_tag "vendor/mediaelement/mediaelementplayer.min" %>
+    <% end %>
+    <%= yield_content :head %>
+		
+</head>
+
+<body class="<% if is_app %>app <% end %><%= page_classes %>">
+    <%= yield %>
+    <%= javascript_include_tag "vendor/jquery-1.11.2.min", "vendor/slick.min", "vendor/jquery.fancybox.pack", "site" %>
+
+    <% if !is_app %>
+        <%= javascript_include_tag "vendor/mediaelementplayer.min" %>
+        <%= partial "layouts/omniture" %>
+    <% end %>
+
+    <%= yield_content :scripts %>
+
+    <% if development? && false %>
+    <script type="text/javascript">
+        $(function () {
+            $(window).resize(displayImageUrl);
+            displayImageUrl();
+        });
+
+        function displayImageUrl() {
+            $('.media-query').html(
+                removeHostFromUrl($('#bgWrapper').css('background-image')) + '<br />' +
+                removeHostFromUrl($('#logo').css('background-image')) + '<br />' +
+                removeHostFromUrl($('#footerVeggies').css('background-image'))
+                );
+        }
+
+        function removeHostFromUrl(imageUrl) {
+            var idx = imageUrl.indexOf('4567/');
+            return imageUrl.substring(idx + 4).replace(')', '');
+        }
+    </script>
+    <div class="media-query" style="position: fixed; bottom: 0; background-color: white;"></div>
+    <% end %>
+	
+	
+		<script type="text/javascript">
+			function trackButtonClick(trackPage, strTrackType, url){
+				
+				<% if is_app %>
+					app.adobeAppTracking(trackPage, strTrackType);
+					console.log("From page: "+ trackPage + ", " + strTrackType + "," + url);
+
+					var p = window.location.pathname;
+					var root = p.substring(0, p.lastIndexOf('/'));
+
+					if(url != null && url != undefined){
+						setTimeout(function(){window.location.href= root + url;}, 50);
+					}
+				<% else %>
+
+				var strTrack = trackPage + ":" + strTrackType;
+				s.tl(this,'o',strTrack);
+				
+				if(url != null && url != undefined){
+					setTimeout(function(){window.location.href= url;}, 50);
+				}
+					
+				<% end %>
+			}
+			
+			
+            function trackParentsClick(trackPage, strTrackType, url){
+                app.adobeAppTracking(trackPage, strTrackType);
+            }
+		</script>
+<script type="text/javascript">
+        $(document).ready(function(){
+        
+            $('.carousel').carousel({hAlign:'center', vAlign:'center', hMargin:0.4, directionNav:true, buttonNav:'bullets'});                                 
+                    
+        });
+    </script>	
+</body>
+</html>

@@ -1,0 +1,31 @@
+<%= javascript_include_tag "vendor/s_code" %>
+
+<script type="text/javascript"><!--
+	
+	//isolating app tracking
+
+	
+    s.pageName = "<%= current_page.data.omniture_pageName %>"
+    s.server = "subwaykids.com"
+    s.trackingServer = "tracking.subwayfreshbuzz.com";
+    s.channel = "<%= current_page.data.omniture_channel %>"
+    s.pageType = ""
+		 
+    s.prop1 = ""
+    s.prop2 = ""
+    s.prop3 = ""
+    s.prop4 = ""
+    s.prop5 = ""
+    s.prop6 =  "<%= current_page.data.omniture_channel %>"
+    s.prop7 = ""
+    s.prop8 = ""
+    s.prop9 = ""
+		
+    s.events = ""
+    s.eVar19 = ""
+
+		
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+		
+    var s_code=s.t();if(s_code)document.write(s_code)//-->
+</script>
